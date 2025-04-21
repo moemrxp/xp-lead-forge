@@ -71,7 +71,8 @@ const CommonFeatures = () => (
     </p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {[
-        "Branded MrXP Business Website",
+        "Branded MrXP Business Website", // Moved to first
+        "Targeted local advertising", // Changed from general description to match "Smart advertising"
         "The Mr. Experience Report",
         "Lead Dashboard",
         "Exclusive Leads — No Sharing",
