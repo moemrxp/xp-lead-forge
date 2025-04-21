@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
@@ -174,13 +173,28 @@ const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {pricingTiers.map((tier, index) => (
             <PricingTier 
               key={index} 
               {...tier}
             />
           ))}
+        </div>
+
+        <div className="text-center mb-20">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link to="/contact">
+              <Button size="lg" className="bg-mrxp-accent hover:bg-mrxp-accent/90 text-white px-8">
+                Get Started
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="bg-transparent border-mrxp-primary text-mrxp-primary hover:bg-mrxp-primary/10 px-8">
+                Request Demo
+              </Button>
+            </Link>
+          </div>
         </div>
         
         <CommonFeatures />
