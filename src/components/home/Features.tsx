@@ -34,6 +34,11 @@ const FeatureCard = ({
 const Features = () => {
   const features = [
     {
+      icon: Star,
+      title: "Smart Advertising",
+      description: "Run targeted local ads that generate exclusive leads only for your business, not shared with competitors."
+    },
+    {
       icon: MessageCircle,
       title: "Instant Messaging",
       description: "Connect with leads in real-time through a professional chat interface tailored for service businesses."
@@ -52,11 +57,6 @@ const Features = () => {
       icon: Users,
       title: "Lead Management",
       description: "Track and manage your leads through a simple but powerful dashboard designed for busy pros."
-    },
-    {
-      icon: Star,
-      title: "Smart Advertising",
-      description: "Run targeted local ads that generate exclusive leads only for your business, not shared with competitors."
     },
     {
       icon: Calendar,
