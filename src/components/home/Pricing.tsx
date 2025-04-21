@@ -7,15 +7,21 @@ import { Link } from "react-router-dom";
 const PricingTier = ({ 
   title, 
   price, 
-  description, 
-  features, 
+  description,
+  leadsPerMonth,
+  serviceAreas,
+  teamSize,
+  features,
   isPopular = false,
   buttonText = "Get Started"
 }: { 
-  title: string; 
-  price: string; 
-  description: string; 
-  features: string[]; 
+  title: string;
+  price: string;
+  description: string;
+  leadsPerMonth: string;
+  serviceAreas: string;
+  teamSize: string;
+  features: string[];
   isPopular?: boolean;
   buttonText?: string;
 }) => {
@@ -32,9 +38,21 @@ const PricingTier = ({
           <span className="text-4xl font-bold">{price}</span>
           <span className="text-gray-500">/mo</span>
         </div>
-        <p className="text-gray-600 mb-6">{description}</p>
+        <p className="text-gray-600 mb-4">{description}</p>
         
-        <Link to="/signup">
+        <div className="space-y-2 mb-6">
+          <div className="flex items-center text-sm">
+            <span className="font-medium">🔹 {leadsPerMonth}</span>
+          </div>
+          <div className="flex items-center text-sm">
+            <span>{serviceAreas}</span>
+          </div>
+          <div className="flex items-center text-sm">
+            <span>{teamSize}</span>
+          </div>
+        </div>
+
+        <Link to="/contact">
           <Button 
             className={`w-full mb-6 ${isPopular ? 'bg-mrxp-accent hover:bg-mrxp-accent/90' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}
           >
@@ -55,61 +73,104 @@ const PricingTier = ({
   );
 };
 
+const CommonFeatures = () => (
+  <div className="mt-16 bg-gray-50 p-8 rounded-xl">
+    <h3 className="text-2xl font-bold mb-6 text-center">What You Get With Every Plan</h3>
+    <p className="text-gray-600 mb-8 text-center">
+      All plans include full access to tools, support, and marketing features.
+    </p>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {[
+        "Branded MrXP Business Website",
+        "The Mr. Experience Report",
+        "Lead Dashboard",
+        "Exclusive Leads — No Sharing",
+        "Chat Box / Instant Messaging",
+        "Click-to-Call / Call Tracking",
+        "Priority Support",
+        "100% Customized Strategy",
+        "Keyword & Audience Research",
+        "Campaign Quality Audits",
+        "Performance-Based Ad Spend Allocation",
+        "Month-to-Month Commitment",
+        "30-Day Cancellation Notice",
+        "Campaigns Launch in 3–5 Days",
+        "Profile Must Be Completed to Launch"
+      ].map((feature, idx) => (
+        <div key={idx} className="flex items-start">
+          <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+          <span className="text-gray-700">{feature}</span>
+        </div>
+      ))}
+    </div>
+    <p className="mt-8 text-sm text-gray-600 text-center">
+      Each package includes a 25% management fee that powers your expert website, our advanced software, and professionally managed ad campaigns—everything you need to grow fast.
+    </p>
+  </div>
+);
+
 const Pricing = () => {
   const pricingTiers = [
     {
       title: "Starter",
-      price: "$49",
+      price: "$2,500",
       description: "Perfect for professionals just getting started with lead generation.",
+      leadsPerMonth: "Up to 12 Exclusive Leads per Month",
+      serviceAreas: "1 service area",
+      teamSize: "Individual or Small Team",
       features: [
-        "Professional mini-website",
-        "Instant messaging",
-        "Click-to-call functionality",
-        "Basic lead tracking",
-        "Email notifications",
-        "5 leads per month included"
+        "Branded MrXP Business Website",
+        "Lead Dashboard",
+        "Exclusive Leads",
+        "Chat Box / Instant Messaging",
+        "Click-to-Call functionality",
+        "Priority Support"
       ]
     },
     {
-      title: "Professional",
-      price: "$99",
+      title: "Growth",
+      price: "$5,000",
       description: "For established pros ready to grow their business significantly.",
+      leadsPerMonth: "Up to 24 Exclusive Leads per Month",
+      serviceAreas: "2-3 service areas",
+      teamSize: "Growing Business or Medium Team",
       features: [
         "Everything in Starter",
-        "Custom domain name",
-        "Instant quote generator",
         "Advanced lead management",
-        "Targeted local advertising",
-        "20 leads per month included",
-        "Priority support"
+        "Extended service area coverage",
+        "Team collaboration tools",
+        "Campaign quality audits",
+        "Performance tracking"
       ],
       isPopular: true
     },
     {
-      title: "Premium",
-      price: "$199",
+      title: "Enterprise",
+      price: "$10,000",
       description: "Full-service solution for high-volume service businesses.",
+      leadsPerMonth: "Up to 50 Exclusive Leads per Month",
+      serviceAreas: "3-4 service areas",
+      teamSize: "Established Business with Staffed Team",
       features: [
-        "Everything in Professional",
-        "Unlimited leads",
-        "Advanced analytics dashboard",
-        "Team collaboration tools",
-        "Client CRM integration",
-        "Booking/scheduling system",
-        "Dedicated account manager"
+        "Everything in Growth",
+        "Maximum lead volume",
+        "Priority campaign optimization",
+        "Custom reporting",
+        "Dedicated account manager",
+        "Strategic growth planning"
       ]
     }
   ];
 
   return (
-    <section className="py-20 bg-gray-50" id="pricing">
+    <section className="py-20 bg-white" id="pricing">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple, <span className="text-mrxp-primary">Transparent Pricing</span>
+            Built for the best. <span className="text-mrxp-primary">Unlock the Power of Your Experience</span>
           </h2>
           <p className="text-xl text-gray-600">
-            Choose the plan that's right for your business. All plans include a 14-day free trial.
+            Earn exclusive leads. Grow your business with confidence.
           </p>
         </div>
 
@@ -117,19 +178,20 @@ const Pricing = () => {
           {pricingTiers.map((tier, index) => (
             <PricingTier 
               key={index} 
-              title={tier.title} 
-              price={tier.price} 
-              description={tier.description} 
-              features={tier.features} 
-              isPopular={tier.isPopular} 
+              {...tier}
             />
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-2">Need a custom solution for your business?</p>
+        <CommonFeatures />
+
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-bold mb-4">Need more than 50 leads/month?</h3>
+          <p className="text-gray-600 mb-6">Let's build a custom plan around your business goals.</p>
           <Link to="/contact">
-            <Button variant="outline" className="bg-white">Contact our team</Button>
+            <Button variant="outline" className="bg-white">
+              Request Custom Plan
+            </Button>
           </Link>
         </div>
       </div>
@@ -138,3 +200,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
