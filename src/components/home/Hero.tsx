@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -38,7 +37,7 @@ const Hero = () => {
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <div className="text-sm text-gray-500">Your Website</div>
-                    <div className="text-lg font-semibold">mikethehandyman.mrxp.pro</div>
+                    <div className="text-lg font-semibold">universalroofingsolutions.mrxp.pro</div>
                   </div>
                   <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                     LIVE
@@ -48,7 +47,7 @@ const Hero = () => {
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
                       <span className="font-medium">New Leads This Week</span>
-                      <span className="text-mrxp-primary font-bold">12</span>
+                      <span className="text-mrxp-primary font-bold">10</span>
                     </div>
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
@@ -60,7 +59,7 @@ const Hero = () => {
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
                       <span className="font-medium">Conversion Rate</span>
-                      <span className="text-mrxp-accent font-bold">32%</span>
+                      <span className="text-mrxp-accent font-bold">42%</span>
                     </div>
                   </div>
                 </div>
