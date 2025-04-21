@@ -37,7 +37,7 @@ const Hero = () => {
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <div className="text-sm text-gray-500">Your Website</div>
-                    <div className="text-lg font-semibold">universalroofingsolutions.mrxp.pro</div>
+                    <div className="text-lg font-semibold">Universal Roofing Solutions</div>
                   </div>
                   <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                     LIVE
@@ -71,7 +71,7 @@ const Hero = () => {
                     </div>
                     <div className="flex-1">
                       <div className="font-medium">John Doe</div>
-                      <div className="text-sm text-gray-500">Kitchen renovation, budget $15-20k</div>
+                      <div className="text-sm text-gray-500">Roof replacement, budget $15-20k</div>
                       <div className="flex gap-2 mt-2">
                         <Button size="sm" className="bg-mrxp-primary hover:bg-mrxp-primary/90">
                           Respond
