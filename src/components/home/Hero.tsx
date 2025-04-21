@@ -5,29 +5,29 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-mrxp-primary/90 to-mrxp-primary py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Grow Your Business With <span className="text-mrxp-accent">Exclusive Leads</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
+              Grow Your Business With <span className="text-mrxp-primary">Exclusive Leads</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-xl mx-auto lg:mx-0">
+            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">
               Professional tools to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
-                <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-accent hover:bg-mrxp-accent/90">
+                <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-primary text-white hover:bg-mrxp-primary/90">
                   Get Started
                 </Button>
               </Link>
               <Link to="/demo">
-                <Button variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 bg-white text-mrxp-primary hover:bg-white/90">
+                <Button variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 border-mrxp-primary text-mrxp-primary hover:bg-mrxp-primary/10">
                   Request Demo
                 </Button>
               </Link>
             </div>
-            <div className="pt-4 text-white/70 text-sm">
+            <div className="pt-4 text-mrxp-dark/70 text-sm">
               No credit card required • Free 14-day trial
             </div>
           </div>
