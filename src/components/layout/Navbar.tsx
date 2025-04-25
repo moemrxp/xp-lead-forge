@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return <nav className="bg-white shadow-sm py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center space-x-2">
-          <span className="font-bold text-2xl text-mrxp-primary">mrxp</span>
-          
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/lovable-uploads/0f79698b-2dc7-436b-8d02-ba068661b6b6.png" 
+            alt="mrxp logo" 
+            className="h-8"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -73,4 +78,5 @@ const Navbar = () => {
         </div>}
     </nav>;
 };
+
 export default Navbar;
