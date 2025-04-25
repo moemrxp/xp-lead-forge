@@ -1,22 +1,17 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  return (
-    <nav className="bg-white shadow-sm py-4 sticky top-0 z-50">
+  return <nav className="bg-white shadow-sm py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <span className="font-bold text-2xl text-mrxp-primary">mrxp</span>
-          <span className="bg-mrxp-accent text-white px-1 rounded text-xs uppercase">Pro</span>
+          
         </Link>
 
         {/* Desktop Navigation */}
@@ -52,35 +47,18 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden absolute top-16 inset-x-0 bg-white shadow-md py-4 px-6 animate-fade-down">
+      {isOpen && <div className="md:hidden absolute top-16 inset-x-0 bg-white shadow-md py-4 px-6 animate-fade-down">
           <div className="flex flex-col space-y-4">
-            <Link 
-              to="/" 
-              className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/" className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link 
-              to="/features" 
-              className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/features" className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2" onClick={() => setIsOpen(false)}>
               Features
             </Link>
-            <Link 
-              to="/pricing" 
-              className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/pricing" className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2" onClick={() => setIsOpen(false)}>
               Pricing
             </Link>
-            <Link 
-              to="/contact" 
-              className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2"
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/contact" className="text-mrxp-dark hover:text-mrxp-primary transition-colors py-2" onClick={() => setIsOpen(false)}>
               Contact
             </Link>
             <div className="flex flex-col space-y-2 pt-2">
@@ -92,10 +70,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-        </div>
-      )}
-    </nav>
-  );
+        </div>}
+    </nav>;
 };
-
 export default Navbar;

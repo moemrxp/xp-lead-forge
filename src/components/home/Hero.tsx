@@ -1,19 +1,15 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 const Hero = () => {
-  return (
-    <section className="bg-white py-20 lg:py-32">
+  return <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
               Grow Your Business With <span className="text-mrxp-primary">Exclusive Leads</span>
             </h1>
-            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">
-              Professional tools to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.
-            </p>
+            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">Professional technology to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.</p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
                 <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-primary text-white hover:bg-mrxp-primary/90">
@@ -26,9 +22,7 @@ const Hero = () => {
                 </Button>
               </Link>
             </div>
-            <div className="pt-4 text-mrxp-dark/70 text-sm">
-              No credit card required • Free 14-day trial
-            </div>
+            
           </div>
           <div className="hidden lg:block">
             <div className="relative">
@@ -37,7 +31,7 @@ const Hero = () => {
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <div className="text-sm text-gray-500">Your Website</div>
-                    <div className="text-lg font-semibold">Universal Roofing Solutions</div>
+                    <div className="text-lg font-semibold">universalroofing.mrxp.com</div>
                   </div>
                   <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                     LIVE
@@ -88,8 +82,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
