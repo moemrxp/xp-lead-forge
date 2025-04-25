@@ -81,7 +81,7 @@ const Features = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <section className="py-20 bg-mrxp-primary">
+        <section className="py-20 bg-blue-900">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Features Built For Home Service Pros
