@@ -7,12 +7,12 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
-              Grow Your Business With <span className="text-mrxp-primary">Exclusive Leads</span>
+              Grow Your Business With <span className="text-blue-900">Exclusive Leads</span>
             </h1>
             <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">Professional technology to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.</p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
-                <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-primary text-white hover:bg-mrxp-primary/90">
+                <Button className="w-full sm:w-auto text-lg px-8 py-6 text-white bg-blue-700 hover:bg-blue-600">
                   Get Started
                 </Button>
               </Link>
@@ -67,7 +67,7 @@ const Hero = () => {
                       <div className="font-medium">John Doe</div>
                       <div className="text-sm text-gray-500">Roof replacement, budget $15-20k</div>
                       <div className="flex gap-2 mt-2">
-                        <Button size="sm" className="bg-mrxp-primary hover:bg-mrxp-primary/90">
+                        <Button size="sm" className="bg-blue-700 hover:bg-blue-600">
                           Respond
                         </Button>
                         <Button size="sm" variant="outline">

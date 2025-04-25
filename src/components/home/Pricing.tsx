@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
-
 const PricingTier = ({
   title,
   price,
@@ -53,16 +52,13 @@ const PricingTier = ({
       </div>
     </div>;
 };
-
 const CommonFeatures = () => <div className="mt-16 bg-gray-50 p-8 rounded-xl">
     <h3 className="text-2xl font-bold mb-6 text-center">What You Get With Every Plan</h3>
     <p className="text-gray-600 mb-8 text-center">
       All plans include full access to tools, support, and marketing features.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {["Branded MrXP Business Website",
-    "Targeted local advertising",
-    "The Mr. Experience Report", "Lead Dashboard", "Exclusive Leads — No Sharing", "Chat Box / Instant Messaging", "Click-to-Call / Call Tracking", "Priority Support", "100% Customized Strategy", "Keyword & Audience Research", "Campaign Quality Audits", "Performance-Based Ad Spend Allocation", "Month-to-Month Commitment", "30-Day Cancellation Notice", "Campaigns Launch in 3–5 Days", "Profile Must Be Completed to Launch"].map((feature, idx) => <div key={idx} className="flex items-start">
+      {["Branded MrXP Business Website", "Targeted local advertising", "The Mr. Experience Report", "Lead Dashboard", "Exclusive Leads — No Sharing", "Chat Box / Instant Messaging", "Click-to-Call / Call Tracking", "Priority Support", "100% Customized Strategy", "Keyword & Audience Research", "Campaign Quality Audits", "Performance-Based Ad Spend Allocation", "Month-to-Month Commitment", "30-Day Cancellation Notice", "Campaigns Launch in 3–5 Days", "Profile Must Be Completed to Launch"].map((feature, idx) => <div key={idx} className="flex items-start">
           <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
           <span className="text-gray-700">{feature}</span>
         </div>)}
@@ -71,7 +67,6 @@ const CommonFeatures = () => <div className="mt-16 bg-gray-50 p-8 rounded-xl">
       Each package includes a 25% management fee that powers your expert website, our advanced software, and professionally managed ad campaigns—everything you need to grow fast.
     </p>
   </div>;
-
 const Pricing = () => {
   const pricingTiers = [{
     title: "Starter",
@@ -103,7 +98,7 @@ const Pricing = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Built for the best. <span className="text-[#2563eb]">Unlock the Power of Your Experience</span>
+            Built for the best. <span className="text-blue-900">Unlock the Power of Your Experience</span>
           </h2>
           <p className="text-xl text-gray-600">
             Earn exclusive leads. Grow your business with confidence.
@@ -143,5 +138,4 @@ const Pricing = () => {
       </div>
     </section>;
 };
-
 export default Pricing;
