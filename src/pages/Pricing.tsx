@@ -77,66 +77,62 @@ const FAQ = ({ question, answer }: { question: string; answer: string }) => {
 };
 
 const Pricing = () => {
-  const pricingTiers = [
-    {
-      title: "Starter",
-      price: "$49",
-      description: "Perfect for professionals just getting started with lead generation.",
-      features: [
-        { included: true, text: "Professional mini-website" },
-        { included: true, text: "Instant messaging" },
-        { included: true, text: "Click-to-call functionality" },
-        { included: true, text: "Basic lead tracking" },
-        { included: true, text: "Email notifications" },
-        { included: true, text: "5 leads per month included" },
-        { included: false, text: "Custom domain name" },
-        { included: false, text: "Instant quote generator" },
-        { included: false, text: "Advanced lead management" },
-        { included: false, text: "Targeted local advertising" },
-        { included: false, text: "Team collaboration tools" },
-        { included: false, text: "Booking/scheduling system" }
-      ]
-    },
-    {
-      title: "Professional",
-      price: "$99",
-      description: "For established pros ready to grow their business significantly.",
-      features: [
-        { included: true, text: "Professional mini-website" },
-        { included: true, text: "Instant messaging" },
-        { included: true, text: "Click-to-call functionality" },
-        { included: true, text: "Basic lead tracking" },
-        { included: true, text: "Email notifications" },
-        { included: true, text: "20 leads per month included" },
-        { included: true, text: "Custom domain name" },
-        { included: true, text: "Instant quote generator" },
-        { included: true, text: "Advanced lead management" },
-        { included: true, text: "Targeted local advertising" },
-        { included: false, text: "Team collaboration tools" },
-        { included: false, text: "Booking/scheduling system" }
-      ],
-      isPopular: true
-    },
-    {
-      title: "Premium",
-      price: "$199",
-      description: "Full-service solution for high-volume service businesses.",
-      features: [
-        { included: true, text: "Professional mini-website" },
-        { included: true, text: "Instant messaging" },
-        { included: true, text: "Click-to-call functionality" },
-        { included: true, text: "Basic lead tracking" },
-        { included: true, text: "Email notifications" },
-        { included: true, text: "Unlimited leads" },
-        { included: true, text: "Custom domain name" },
-        { included: true, text: "Instant quote generator" },
-        { included: true, text: "Advanced lead management" },
-        { included: true, text: "Targeted local advertising" },
-        { included: true, text: "Team collaboration tools" },
-        { included: true, text: "Booking/scheduling system" }
-      ]
-    }
-  ];
+  const pricingTiers = [{
+    title: "Starter",
+    price: "$2,500",
+    description: "Perfect for professionals just getting started with lead generation.",
+    features: [
+      { included: true, text: "Up to 12 Exclusive Leads per Month" },
+      { included: true, text: "1 service area" },
+      { included: true, text: "Branded MrXP Business Website" },
+      { included: true, text: "Lead Dashboard" },
+      { included: true, text: "Exclusive Leads" },
+      { included: true, text: "Chat Box / Instant Messaging" },
+      { included: true, text: "Click-to-Call functionality" },
+      { included: true, text: "Priority Support" },
+      { included: false, text: "Extended service area coverage" },
+      { included: false, text: "Team collaboration tools" },
+      { included: false, text: "Campaign quality audits" },
+      { included: false, text: "Strategic growth planning" }
+    ]
+  }, {
+    title: "Growth",
+    price: "$5,000",
+    description: "For established pros ready to grow their business significantly.",
+    features: [
+      { included: true, text: "Up to 24 Exclusive Leads per Month" },
+      { included: true, text: "2-3 service areas" },
+      { included: true, text: "Everything in Starter" },
+      { included: true, text: "Advanced lead management" },
+      { included: true, text: "Extended service area coverage" },
+      { included: true, text: "Team collaboration tools" },
+      { included: true, text: "Campaign quality audits" },
+      { included: true, text: "Performance tracking" },
+      { included: false, text: "Maximum lead volume" },
+      { included: false, text: "Priority campaign optimization" },
+      { included: false, text: "Custom reporting" },
+      { included: false, text: "Strategic growth planning" }
+    ],
+    isPopular: true
+  }, {
+    title: "Enterprise",
+    price: "$10,000",
+    description: "Full-service solution for high-volume service businesses.",
+    features: [
+      { included: true, text: "Up to 50 Exclusive Leads per Month" },
+      { included: true, text: "3-4 service areas" },
+      { included: true, text: "Everything in Growth" },
+      { included: true, text: "Maximum lead volume" },
+      { included: true, text: "Priority campaign optimization" },
+      { included: true, text: "Custom reporting" },
+      { included: true, text: "Dedicated account manager" },
+      { included: true, text: "Strategic growth planning" },
+      { included: true, text: "Team collaboration tools" },
+      { included: true, text: "Campaign quality audits" },
+      { included: true, text: "Performance tracking" },
+      { included: true, text: "Advanced lead management" }
+    ]
+  }];
 
   const faqs = [
     {
