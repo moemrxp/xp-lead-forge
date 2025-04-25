@@ -15,7 +15,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/0f79698b-2dc7-436b-8d02-ba068661b6b6.png" 
             alt="mrxp logo" 
-            className="h-12"
+            className="h-16"
           />
         </Link>
 
