@@ -9,7 +9,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
               Grow Your Business With <span className="text-blue-900">Exclusive Leads</span>
             </h1>
-            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">Professional technology to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.</p>
+            <p className="md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0 text-lg">Professional technology to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.</p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
                 <Button className="w-full sm:w-auto text-lg px-8 py-6 text-white bg-blue-700 hover:bg-blue-600">
