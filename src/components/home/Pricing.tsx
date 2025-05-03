@@ -27,16 +27,16 @@ const PricingTier = ({
         </div>
         <p className="text-gray-600 mb-4">{description}</p>
         
-        <div className="space-y-2 mb-6">
+        <div className="space-y-3 mb-6">
           {leadsPerMonth && <div className="flex items-center text-sm">
             <span className="font-medium">🔹 {leadsPerMonth}</span>
           </div>}
-          <div className="flex items-center text-sm">
-            <span>{serviceAreas}</span>
-          </div>
-          <div className="flex items-center text-sm">
-            <span>{teamSize}</span>
-          </div>
+          {serviceAreas && <div className="flex items-center text-sm">
+            <span className="font-bold">{serviceAreas}</span>
+          </div>}
+          {teamSize && <div className="flex items-center text-sm">
+            <span className="font-bold">{teamSize}</span>
+          </div>}
         </div>
 
         <Link to="/contact">
@@ -77,8 +77,8 @@ const Pricing = () => {
     price: "$699",
     description: "Website and features package for professionals to establish their online presence.",
     serviceAreas: "1 service area",
-    teamSize: "Agencies & Home Service Businesses, You control ads, tech and website hosting only",
-    features: ["Branded MrXP Business Website", "Lead Dashboard", "Chat Box / Instant Messaging", "Click-to-Call functionality", "Priority Support", "Connect with your preferred ad source"]
+    teamSize: "Agencies & Home Service Businesses",
+    features: ["Branded MrXP Business Website", "Lead Dashboard", "Chat Box / Instant Messaging", "Click-to-Call functionality", "Priority Support", "Connect with your preferred ad source", "You control ads, tech and website hosting only"]
   }, {
     title: "Growth",
     price: "$5,000",
