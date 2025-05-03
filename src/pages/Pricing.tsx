@@ -71,145 +71,188 @@ const FAQ = ({
 const Pricing = () => {
   const pricingTiers = [{
     title: "Starter",
-    price: "$2,500",
-    description: "Perfect for professionals just getting started with lead generation.",
-    features: [{
-      included: true,
-      text: "Up to 12 Exclusive Leads per Month"
-    }, {
-      included: true,
-      text: "1 service area"
-    }, {
-      included: true,
-      text: "Branded MrXP Business Website"
-    }, {
-      included: true,
-      text: "Lead Dashboard"
-    }, {
-      included: true,
-      text: "Exclusive Leads"
-    }, {
-      included: true,
-      text: "Chat Box / Instant Messaging"
-    }, {
-      included: true,
-      text: "Click-to-Call functionality"
-    }, {
-      included: true,
-      text: "Priority Support"
-    }, {
-      included: false,
-      text: "Extended service area coverage"
-    }, {
-      included: false,
-      text: "Team collaboration tools"
-    }, {
-      included: false,
-      text: "Campaign quality audits"
-    }, {
-      included: false,
-      text: "Strategic growth planning"
-    }]
+    price: "$699",
+    description: "Website and features package for professionals to establish their online presence.",
+    features: [
+      {
+        included: true,
+        text: "Branded MrXP Business Website"
+      },
+      {
+        included: true,
+        text: "1 service area"
+      },
+      {
+        included: true,
+        text: "Lead Dashboard"
+      },
+      {
+        included: true,
+        text: "Chat Box / Instant Messaging"
+      },
+      {
+        included: true,
+        text: "Click-to-Call functionality"
+      },
+      {
+        included: true,
+        text: "Priority Support"
+      },
+      {
+        included: true,
+        text: "Connect with your preferred ad source"
+      },
+      {
+        included: false,
+        text: "Extended service area coverage"
+      },
+      {
+        included: false,
+        text: "Team collaboration tools"
+      },
+      {
+        included: false,
+        text: "Campaign quality audits"
+      },
+      {
+        included: false,
+        text: "Strategic growth planning"
+      }
+    ]
   }, {
     title: "Growth",
     price: "$5,000",
     description: "For established pros ready to grow their business significantly.",
-    features: [{
-      included: true,
-      text: "Up to 24 Exclusive Leads per Month"
-    }, {
-      included: true,
-      text: "2-3 service areas"
-    }, {
-      included: true,
-      text: "Everything in Starter"
-    }, {
-      included: true,
-      text: "Advanced lead management"
-    }, {
-      included: true,
-      text: "Extended service area coverage"
-    }, {
-      included: true,
-      text: "Team collaboration tools"
-    }, {
-      included: true,
-      text: "Campaign quality audits"
-    }, {
-      included: true,
-      text: "Performance tracking"
-    }, {
-      included: false,
-      text: "Maximum lead volume"
-    }, {
-      included: false,
-      text: "Priority campaign optimization"
-    }, {
-      included: false,
-      text: "Custom reporting"
-    }, {
-      included: false,
-      text: "Strategic growth planning"
-    }],
+    features: [
+      {
+        included: true,
+        text: "Up to 24 Exclusive Leads per Month"
+      },
+      {
+        included: true,
+        text: "2-3 service areas"
+      },
+      {
+        included: true,
+        text: "Everything in Starter"
+      },
+      {
+        included: true,
+        text: "Advanced lead management"
+      },
+      {
+        included: true,
+        text: "Extended service area coverage"
+      },
+      {
+        included: true,
+        text: "Team collaboration tools"
+      },
+      {
+        included: true,
+        text: "Campaign quality audits"
+      },
+      {
+        included: true,
+        text: "Performance tracking"
+      },
+      {
+        included: false,
+        text: "Maximum lead volume"
+      },
+      {
+        included: false,
+        text: "Priority campaign optimization"
+      },
+      {
+        included: false,
+        text: "Custom reporting"
+      },
+      {
+        included: false,
+        text: "Strategic growth planning"
+      }
+    ],
     isPopular: true
   }, {
     title: "Enterprise",
     price: "$10,000",
     description: "Full-service solution for high-volume service businesses.",
-    features: [{
-      included: true,
-      text: "Up to 50 Exclusive Leads per Month"
-    }, {
-      included: true,
-      text: "3-4 service areas"
-    }, {
-      included: true,
-      text: "Everything in Growth"
-    }, {
-      included: true,
-      text: "Maximum lead volume"
-    }, {
-      included: true,
-      text: "Priority campaign optimization"
-    }, {
-      included: true,
-      text: "Custom reporting"
-    }, {
-      included: true,
-      text: "Dedicated account manager"
-    }, {
-      included: true,
-      text: "Strategic growth planning"
-    }, {
-      included: true,
-      text: "Team collaboration tools"
-    }, {
-      included: true,
-      text: "Campaign quality audits"
-    }, {
-      included: true,
-      text: "Performance tracking"
-    }, {
-      included: true,
-      text: "Advanced lead management"
-    }]
+    features: [
+      {
+        included: true,
+        text: "Up to 50 Exclusive Leads per Month"
+      },
+      {
+        included: true,
+        text: "3-4 service areas"
+      },
+      {
+        included: true,
+        text: "Everything in Growth"
+      },
+      {
+        included: true,
+        text: "Maximum lead volume"
+      },
+      {
+        included: true,
+        text: "Priority campaign optimization"
+      },
+      {
+        included: true,
+        text: "Custom reporting"
+      },
+      {
+        included: true,
+        text: "Dedicated account manager"
+      },
+      {
+        included: true,
+        text: "Strategic growth planning"
+      },
+      {
+        included: true,
+        text: "Team collaboration tools"
+      },
+      {
+        included: true,
+        text: "Campaign quality audits"
+      },
+      {
+        included: true,
+        text: "Performance tracking"
+      },
+      {
+        included: true,
+        text: "Advanced lead management"
+      }
+    ]
   }];
-  const faqs = [{
-    question: "Do I need technical skills to use mrxp?",
-    answer: "No technical skills required! Our platform is designed to be user-friendly for busy service professionals. We handle all the technical details so you can focus on your business."
-  }, {
-    question: "How do the lead generation advertisements work?",
-    answer: "We create and manage targeted local ad campaigns that direct potential customers to your mrxp mini-website. These leads are exclusive to you — not shared with other service providers in your area."
-  }, {
-    question: "Can I use my own domain name?",
-    answer: "Yes! With our Professional and Premium plans, you can connect your own custom domain or use a free subdomain on our platform (yourname.mrxp.pro)."
-  }, {
-    question: "What happens after my free trial ends?",
-    answer: "After your 14-day free trial, your account will automatically switch to the plan you selected. You can change or cancel your plan at any time through your account settings."
-  }, {
-    question: "Do you offer refunds?",
-    answer: "We offer a 30-day money-back guarantee if you're not satisfied with our service. Simply contact our support team within 30 days of your first payment."
-  }];
+  
+  const faqs = [
+    {
+      question: "Do I need technical skills to use mrxp?",
+      answer: "No technical skills required! Our platform is designed to be user-friendly for busy service professionals. We handle all the technical details so you can focus on your business."
+    },
+    {
+      question: "How do the lead generation advertisements work?",
+      answer: "We create and manage targeted local ad campaigns that direct potential customers to your mrxp mini-website. These leads are exclusive to you — not shared with other service providers in your area."
+    },
+    {
+      question: "Can I use my own domain name?",
+      answer: "Yes! With our Professional and Premium plans, you can connect your own custom domain or use a free subdomain on our platform (yourname.mrxp.pro)."
+    },
+    {
+      question: "What happens after my free trial ends?",
+      answer: "After your 14-day free trial, your account will automatically switch to the plan you selected. You can change or cancel your plan at any time through your account settings."
+    },
+    {
+      question: "Do you offer refunds?",
+      answer: "We offer a 30-day money-back guarantee if you're not satisfied with our service. Simply contact our support team within 30 days of your first payment."
+    }
+  ];
+
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
