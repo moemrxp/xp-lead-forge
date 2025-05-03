@@ -1,20 +1,18 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 const Hero = () => {
-  return (
-    <section className="bg-white py-20 lg:py-32">
+  return <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
               Grow Your Business With <span className="text-blue-900">Mr. Experience</span>
             </h1>
-            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">
-              Professional tools to help experienced service pros generate quality leads, improve communication, and maximize every opportunity.
-            </p>
+            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">High-Converting Website. Exclusive Leads. Value-Driven Tech.
+
+Home Pros & Agencies — run your own ads or let us handle it.
+Win more jobs with a branded site, verified credentials, and built-in tools like instant messaging and quote requests — everything designed to convert.</p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
                 <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-primary text-white hover:bg-mrxp-primary/90">
@@ -89,8 +87,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
