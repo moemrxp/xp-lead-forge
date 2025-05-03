@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -75,8 +76,12 @@ const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
     price: "$699",
-    description: "Your leads. Your control.",
+    description: "Website & Technology",
     features: [
+      {
+        included: true,
+        text: "Build Value, Win Jobs, Maximize Profits."
+      },
       {
         included: true,
         text: "Custom Website with Hosting (e.g., yourcompany.mrxp.com)"
@@ -87,27 +92,27 @@ const Pricing = () => {
       },
       {
         included: true,
-        text: "Instant messaging and quote request forms"
+        text: "Instant messaging"
       },
       {
         included: true,
-        text: "Mr. Experience Report to showcase your credentials and build trust"
+        text: "Click-to-Call"
       },
       {
         included: true,
-        text: "Mobile-Optimized Design ensuring seamless user experience across devices"
+        text: "Reviews"
       },
       {
         included: true,
-        text: "Analytics Dashboard to monitor traffic and engagement"
+        text: "Photo's & Videos"
       },
       {
         included: true,
-        text: "Easy Integration with your existing marketing tools and CRM"
+        text: "Mobile-Optimized Design"
       },
       {
         included: true,
-        text: "Template.net"
+        text: "Mr. Experience Report - showcase your credentials and build trust"
       },
       {
         included: true,
