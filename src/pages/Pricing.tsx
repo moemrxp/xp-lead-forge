@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -74,53 +73,45 @@ const FAQ = ({
 
 const Pricing = () => {
   const pricingTiers = [{
-    title: "Starter",
+    title: "MrXP Website-Only Plan",
     price: "$699",
-    description: "Website and features package for professionals to establish their online presence.",
+    description: "Your brand. Your leads. Your control.",
     features: [
       {
         included: true,
-        text: "Branded MrXP Business Website"
+        text: "Custom Mini-Site on a dedicated subdomain (e.g., yourcompany.mrxp.com)"
       },
       {
         included: true,
-        text: "1 service area"
+        text: "Built-in Lead Capture with instant messaging and quote request forms"
       },
       {
         included: true,
-        text: "Agencies & Home Service Businesses"
+        text: "Mr. Experience Report to showcase your credentials and build trust"
       },
       {
         included: true,
-        text: "You control ads, tech and website hosting only"
+        text: "Mobile-Optimized Design ensuring seamless user experience across devices"
       },
       {
         included: true,
-        text: "Lead Dashboard"
+        text: "Analytics Dashboard to monitor traffic and engagement"
       },
       {
         included: true,
-        text: "Chat Box / Instant Messaging"
+        text: "Easy Integration with your existing marketing tools and CRM"
       },
       {
         included: true,
-        text: "Click-to-Call functionality"
+        text: "Ideal for: Home service professionals seeking a robust online presence"
       },
       {
         included: true,
-        text: "Priority Support"
+        text: "Ideal for: Agencies managing multiple client profiles"
       },
       {
         included: true,
-        text: "Connect with your preferred ad source"
-      },
-      {
-        included: false,
-        text: "Extended service area coverage"
-      },
-      {
-        included: false,
-        text: "Team collaboration tools"
+        text: "Ideal for: Businesses aiming to convert traffic into tangible leads"
       }
     ]
   }, {
