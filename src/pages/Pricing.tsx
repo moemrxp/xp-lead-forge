@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -79,11 +80,11 @@ const Pricing = () => {
     features: [
       {
         included: true,
-        text: "Custom Mini-Site on a dedicated subdomain (e.g., yourcompany.mrxp.com)"
+        text: "Custom website with hosting (e.g., yourcompany.mrxp.com)"
       },
       {
         included: true,
-        text: "Built-in Lead Capture with instant messaging and quote request forms"
+        text: "Built-in Lead Capture Instant messaging"
       },
       {
         included: true,
@@ -100,6 +101,10 @@ const Pricing = () => {
       {
         included: true,
         text: "Easy Integration with your existing marketing tools and CRM"
+      },
+      {
+        included: true,
+        text: "Template.net"
       },
       {
         included: true,

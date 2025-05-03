@@ -107,12 +107,13 @@ const Pricing = () => {
       price: "$699",
       description: "Your brand. Your leads. Your control.",
       features: [
-        "Custom Mini-Site on a dedicated subdomain (e.g., yourcompany.mrxp.com)",
-        "Built-in Lead Capture with instant messaging and quote request forms",
+        "Custom website with hosting (e.g., yourcompany.mrxp.com)",
+        "Built-in Lead Capture Instant messaging",
         "Mr. Experience Report to showcase your credentials and build trust",
         "Mobile-Optimized Design ensuring seamless user experience across devices",
         "Analytics Dashboard to monitor traffic and engagement",
         "Easy Integration with your existing marketing tools and CRM",
+        "Template.net",
         "Ideal for: Home service professionals seeking a robust online presence",
         "Ideal for: Agencies managing multiple client profiles",
         "Ideal for: Businesses aiming to convert traffic into tangible leads"
