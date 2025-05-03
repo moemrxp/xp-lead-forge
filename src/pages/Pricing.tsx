@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -76,15 +75,19 @@ const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
     price: "$699",
-    description: "Your brand. Your leads. Your control.",
+    description: "Your leads. Your control.",
     features: [
       {
         included: true,
-        text: "Custom website with hosting (e.g., yourcompany.mrxp.com)"
+        text: "Custom Website with Hosting (e.g., yourcompany.mrxp.com)"
       },
       {
         included: true,
-        text: "Built-in Lead Capture Instant messaging"
+        text: "Built-in Lead Capture"
+      },
+      {
+        included: true,
+        text: "Instant messaging and quote request forms"
       },
       {
         included: true,

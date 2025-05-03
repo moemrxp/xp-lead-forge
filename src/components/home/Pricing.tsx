@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -105,10 +104,11 @@ const Pricing = () => {
     {
       title: "MrXP Website-Only Plan",
       price: "$699",
-      description: "Your brand. Your leads. Your control.",
+      description: "Your leads. Your control.",
       features: [
-        "Custom website with hosting (e.g., yourcompany.mrxp.com)",
-        "Built-in Lead Capture Instant messaging",
+        "Custom Website with Hosting (e.g., yourcompany.mrxp.com)",
+        "Built-in Lead Capture",
+        "Instant messaging and quote request forms",
         "Mr. Experience Report to showcase your credentials and build trust",
         "Mobile-Optimized Design ensuring seamless user experience across devices",
         "Analytics Dashboard to monitor traffic and engagement",
