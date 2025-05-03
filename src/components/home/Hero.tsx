@@ -52,7 +52,7 @@ const Hero = () => {
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
-                      <span className="font-medium">Conversion Rate</span>
+                      <span className="font-medium">Your Mr. Experience Report Views </span>
                       <span className="text-mrxp-accent font-bold">42%</span>
                     </div>
                   </div>

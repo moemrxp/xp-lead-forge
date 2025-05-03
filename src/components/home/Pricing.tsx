@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -31,7 +30,7 @@ const PricingTier = ({
             <span className="font-medium">🔹 {leadsPerMonth}</span>
           </div>}
           <div className="flex items-center text-sm">
-            <span>{serviceAreas}</span>
+            
           </div>
           <div className="flex items-center text-sm">
             <span>{teamSize}</span>
