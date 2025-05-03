@@ -1,7 +1,9 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
+
 const PricingTier = ({
   title,
   price,
@@ -30,7 +32,7 @@ const PricingTier = ({
             <span className="font-medium">🔹 {leadsPerMonth}</span>
           </div>}
           <div className="flex items-center text-sm">
-            
+            <span>{serviceAreas}</span>
           </div>
           <div className="flex items-center text-sm">
             <span>{teamSize}</span>
@@ -52,6 +54,7 @@ const PricingTier = ({
       </div>
     </div>;
 };
+
 const CommonFeatures = () => <div className="mt-16 bg-gray-50 p-8 rounded-xl">
     <h3 className="text-2xl font-bold mb-6 text-center">What You Get With Every Plan</h3>
     <p className="text-gray-600 mb-8 text-center">
@@ -67,13 +70,14 @@ const CommonFeatures = () => <div className="mt-16 bg-gray-50 p-8 rounded-xl">
       Each package includes everything you need to create a professional online presence and manage leads effectively.
     </p>
   </div>;
+
 const Pricing = () => {
   const pricingTiers = [{
     title: "Starter",
     price: "$699",
     description: "Website and features package for professionals to establish their online presence.",
     serviceAreas: "1 service area",
-    teamSize: "Individual or Small Team",
+    teamSize: "Agencies & Home Service Businesses, You control ads, tech and website hosting only",
     features: ["Branded MrXP Business Website", "Lead Dashboard", "Chat Box / Instant Messaging", "Click-to-Call functionality", "Priority Support", "Connect with your preferred ad source"]
   }, {
     title: "Growth",
@@ -93,6 +97,7 @@ const Pricing = () => {
     teamSize: "Established Business with Staffed Team",
     features: ["Everything in Growth", "Maximum lead volume", "Priority campaign optimization", "Custom reporting", "Dedicated account manager", "Strategic growth planning"]
   }];
+  
   return <section className="py-20 bg-white" id="pricing">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -137,4 +142,5 @@ const Pricing = () => {
       </div>
     </section>;
 };
+
 export default Pricing;

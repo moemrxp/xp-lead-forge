@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -5,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import CTA from "@/components/home/CTA";
+
 const PricingTier = ({
   title,
   price,
@@ -56,6 +58,7 @@ const PricingTier = ({
       </div>
     </div>;
 };
+
 const FAQ = ({
   question,
   answer
@@ -68,6 +71,7 @@ const FAQ = ({
       <p className="text-gray-600">{answer}</p>
     </div>;
 };
+
 const Pricing = () => {
   const pricingTiers = [{
     title: "Starter",
@@ -81,6 +85,14 @@ const Pricing = () => {
       {
         included: true,
         text: "1 service area"
+      },
+      {
+        included: true,
+        text: "Agencies & Home Service Businesses"
+      },
+      {
+        included: true,
+        text: "You control ads, tech and website hosting only"
       },
       {
         included: true,
@@ -109,14 +121,6 @@ const Pricing = () => {
       {
         included: false,
         text: "Team collaboration tools"
-      },
-      {
-        included: false,
-        text: "Campaign quality audits"
-      },
-      {
-        included: false,
-        text: "Strategic growth planning"
       }
     ]
   }, {
@@ -287,4 +291,5 @@ const Pricing = () => {
       <Footer />
     </div>;
 };
+
 export default Pricing;
