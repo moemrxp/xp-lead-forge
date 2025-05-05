@@ -84,7 +84,7 @@ const Hero = () => {
                       <div className="font-medium">John Doe</div>
                       <div className="text-sm text-gray-500">Roof replacement, budget $15-20k</div>
                       <div className="flex gap-2 mt-2">
-                        <Button size="sm" className="bg-mrxp-primary hover:bg-mrxp-primary/90">Call Now</Button>
+                        <Button size="sm" className="bg-mrxp-primary hover:bg-mrxp-primary/90 mx-0 my-0 py-0 px-[20px]">Call Now</Button>
                         <Button size="sm" variant="outline">
                           View Details
                         </Button>
