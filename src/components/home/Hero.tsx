@@ -51,14 +51,16 @@ Home Pros & Agencies — run your own ads or let us handle it. built-in tools li
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
-                      <span className="font-medium">Response Time</span>
-                      <span className="text-green-600 font-bold">2 min avg</span>
+                      <span className="font-medium">Instant Messages </span>
+                      <span className="text-green-600 font-bold">6</span>
                     </div>
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
-                      <span className="font-medium">Conversion Rate</span>
-                      <span className="text-mrxp-accent font-bold">42%</span>
+                      <span className="font-medium">Calls</span>
+                      <span className="text-mrxp-accent font-bold">12
+
+                    </span>
                     </div>
                   </div>
                 </div>
