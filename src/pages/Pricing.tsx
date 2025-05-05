@@ -126,7 +126,8 @@ const Pricing = () => {
         included: true,
         text: "Ideal for: Businesses aiming to convert traffic into tangible leads"
       }
-    ]
+    ],
+    isPopular: true
   }, {
     title: "Growth",
     price: "$5,000",
@@ -181,7 +182,7 @@ const Pricing = () => {
         text: "Strategic growth planning"
       }
     ],
-    isPopular: true
+    isPopular: false
   }, {
     title: "Enterprise",
     price: "$10,000",

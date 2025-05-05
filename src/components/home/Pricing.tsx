@@ -119,7 +119,8 @@ const Pricing = () => {
         "Ideal for: Home service professionals seeking a robust online presence",
         "Ideal for: Agencies managing multiple client profiles",
         "Ideal for: Businesses aiming to convert traffic into tangible leads"
-      ]
+      ],
+      isPopular: true
     },
     {
       title: "Growth",
@@ -136,7 +137,7 @@ const Pricing = () => {
         "Campaign quality audits",
         "Performance tracking"
       ],
-      isPopular: true
+      isPopular: false
     },
     {
       title: "Enterprise",
