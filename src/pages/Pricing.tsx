@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -75,7 +74,7 @@ const FAQ = ({
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
-    price: "$699",
+    price: "$697",
     description: "Website & Technology",
     features: [
       {

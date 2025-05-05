@@ -104,7 +104,7 @@ const Pricing = () => {
   const pricingTiers = [
     {
       title: "MrXP Website-Only Plan",
-      price: "$699",
+      price: "$697",
       description: "Website & Technology",
       features: [
         "Build Value, Win Jobs, Maximize Profits.",
