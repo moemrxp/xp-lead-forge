@@ -1,12 +1,9 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
-
 const Hero = () => {
-  return (
-    <section className="bg-white py-20 lg:py-32">
+  return <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
@@ -87,9 +84,7 @@ const Hero = () => {
                       <div className="font-medium">John Doe</div>
                       <div className="text-sm text-gray-500">Roof replacement, budget $15-20k</div>
                       <div className="flex gap-2 mt-2">
-                        <Button size="sm" className="bg-mrxp-primary hover:bg-mrxp-primary/90">
-                          Respond
-                        </Button>
+                        <Button size="sm" className="bg-mrxp-primary hover:bg-mrxp-primary/90">Call Now</Button>
                         <Button size="sm" variant="outline">
                           View Details
                         </Button>
@@ -102,8 +97,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
