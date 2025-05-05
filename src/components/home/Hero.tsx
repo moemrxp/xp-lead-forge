@@ -9,10 +9,10 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
               Grow Your Business With <span className="text-blue-900">Mr. Experience</span>
             </h1>
-            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">High-Converting Website. Exclusive Leads. Value-Driven Tech.
+            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">High-Converting Website. Exclusive Leads.
+Value-Driven Technology.
 
-Home Pros & Agencies — run your own ads or let us handle it.
-Win more jobs with a branded site, verified credentials, and built-in tools like instant messaging and quote requests — everything designed to convert.</p>
+Home Pros & Agencies — run your own ads or let us handle it. built-in tools like instant messaging and instant quote requests — everything designed to convert.</p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
                 <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-primary text-white hover:bg-mrxp-primary/90">
