@@ -25,9 +25,7 @@ Home Pros & Agencies — run your own ads or let us handle it. built-in tools li
                 </Button>
               </Link>
             </div>
-            <div className="pt-4 text-mrxp-dark/70 text-sm">
-              No credit card required • Free 14-day trial
-            </div>
+            
           </div>
           <div className="hidden lg:block">
             <div className="relative">
