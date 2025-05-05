@@ -36,7 +36,7 @@ Home Pros & Agencies — run your own ads or let us handle it. built-in tools li
                 <div className="flex items-center justify-between mb-6">
                   <div>
                     <div className="text-sm text-gray-500">Your Website</div>
-                    <div className="text-lg font-semibold">Universal Roofing Solutions</div>
+                    <div className="text-lg font-semibold">yourcompany.mrxp.com</div>
                   </div>
                   <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
                     LIVE
