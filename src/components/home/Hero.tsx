@@ -1,18 +1,33 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Separator } from "@/components/ui/separator";
+
 const Hero = () => {
-  return <section className="bg-white py-20 lg:py-32">
+  return (
+    <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
               Grow Your Business With <span className="text-blue-900">Mr. Experience</span>
             </h1>
-            <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0">High-Converting Website. Exclusive Leads.
-Value-Driven Technology.
-
-Home Pros & Agencies — run your own ads or let us handle it. built-in tools like instant messaging and instant quote requests — everything designed to convert.</p>
+            
+            <div className="space-y-4">
+              <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0 font-medium">
+                High-Converting Website. Exclusive Leads. Value-Driven Technology.
+              </p>
+              
+              <div className="flex justify-center lg:justify-start">
+                <Separator className="w-24 h-1 bg-mrxp-accent" />
+              </div>
+              
+              <p className="text-lg md:text-xl text-mrxp-dark/70 max-w-xl mx-auto lg:mx-0">
+                Home Pros & Agencies — run your own ads or let us handle it. Built-in tools like instant messaging and instant quotes — everything designed to convert.
+              </p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
               <Link to="/signup">
                 <Button className="w-full sm:w-auto text-lg px-8 py-6 bg-mrxp-primary text-white hover:bg-mrxp-primary/90">
@@ -25,8 +40,8 @@ Home Pros & Agencies — run your own ads or let us handle it. built-in tools li
                 </Button>
               </Link>
             </div>
-            
           </div>
+          
           <div className="hidden lg:block">
             <div className="relative">
               <div className="absolute -left-6 -top-6 w-72 h-72 bg-mrxp-accent/20 rounded-full blur-3xl"></div>
@@ -87,6 +102,8 @@ Home Pros & Agencies — run your own ads or let us handle it. built-in tools li
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
