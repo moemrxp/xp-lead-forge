@@ -146,6 +146,10 @@ const Pricing = () => {
       },
       {
         included: true,
+        text: "Exclusive leads"
+      },
+      {
+        included: true,
         text: "Advanced lead management"
       },
       {

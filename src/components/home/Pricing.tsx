@@ -97,7 +97,7 @@ const Pricing = () => {
     leadsPerMonth: "Up to 24 Exclusive Leads per Month",
     serviceAreas: "2-3 service areas",
     teamSize: "Growing Business or Medium Team",
-    features: ["Everything in Starter", "Advanced lead management", "Extended service area coverage", "Team collaboration tools", "Campaign quality audits", "Performance tracking"],
+    features: ["Everything in Starter", "Exclusive leads", "Advanced lead management", "Extended service area coverage", "Team collaboration tools", "Campaign quality audits", "Performance tracking"],
     isPopular: false
   }, {
     title: "Enterprise",
