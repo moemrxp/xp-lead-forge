@@ -20,7 +20,8 @@ const Hero = () => {
                 <Separator className="w-24 h-1 bg-mrxp-accent" />
               </div>
               
-              <p className="text-lg md:text-xl text-mrxp-dark/70 max-w-xl mx-auto lg:mx-0">Home Pros & Agencies — Run your own ads or let us handle it. Built-in tools like instant messaging and instant quotes— everything designed to convert.</p>
+              <p className="text-lg md:text-xl text-mrxp-dark/70 max-w-xl mx-auto lg:mx-0">Home Pros & Agencies — Run your own ads or let us handle it.
+With built-in tools like instant messaging and instant quote requests, designed from the ground up to convert leads into customers.</p>
             </div>
             
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
