@@ -1,7 +1,9 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
 const FeatureCard = ({
   icon: Icon,
   title,
@@ -19,6 +21,7 @@ const FeatureCard = ({
       <p className="text-gray-600">{description}</p>
     </div>;
 };
+
 const Features = () => {
   const features = [{
     icon: Star,
@@ -45,9 +48,10 @@ const Features = () => {
     title: "Scheduling Tools",
     description: "Let clients book appointments that sync with your calendar and send automatic reminders."
   }];
+  
   const faqs = [{
     question: "What makes MrXP different from Angi, Home Advisor, & Thumbtack?",
-    answer: "MrXP does NOT share leads to multiple businesses. Every lead you get is exclusive to YOU — and your Mr. Experience Report helps you win the job, not just chase it. MrXP is the only platform built to reward experience and sell value in your service."
+    answer: "You get a high-converting website (not listing), exclusive leads (not shared), and technology built to close jobs — not chase them. With you in the driver seat of managing your own ads internally, or we can do that for you."
   }, {
     question: "Do I need a website to sign up?",
     answer: "Nope. MrXP is designed to help any service provider stand out — even if you don't have a website. Your MrXP profile acts like a mini-website and credibility hub — perfect for sharing with homeowners to build value."
@@ -73,6 +77,7 @@ const Features = () => {
     question: "How does the referral program work?",
     answer: "You refer 3 providers to advertise on mrxp at any plan you earn an additional $1000 in advertising credits."
   }];
+  
   return <section className="py-20 bg-gray-50" id="features">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -115,4 +120,5 @@ const Features = () => {
       </div>
     </section>;
 };
+
 export default Features;
