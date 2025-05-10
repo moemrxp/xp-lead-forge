@@ -1,20 +1,24 @@
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit, Search, Settings, Link } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 const FeatureSection = ({
   title,
   description,
   icon: Icon,
   features,
-  imagePosition = "right"
+  imagePosition = "right",
+  imageSrc
 }: {
   title: string;
   description: string;
   icon: React.ElementType;
   features: string[];
   imagePosition?: "left" | "right";
+  imageSrc?: string;
 }) => {
   return <div className="py-16 border-b border-gray-200 last:border-0">
       <div className="container mx-auto px-4">
@@ -39,9 +43,19 @@ const FeatureSection = ({
           </div>
           
           <div className={`${imagePosition === "left" ? "order-first lg:order-last" : ""}`}>
-            <div className="bg-gray-100 rounded-xl p-4 aspect-video flex items-center justify-center">
-              <div className="text-center text-gray-400">Feature Preview Image</div>
-            </div>
+            {imageSrc ? (
+              <Card className="overflow-hidden shadow-lg">
+                <img 
+                  src={imageSrc} 
+                  alt={`${title} screenshot`} 
+                  className="w-full object-cover rounded-lg"
+                />
+              </Card>
+            ) : (
+              <div className="bg-gray-100 rounded-xl p-4 aspect-video flex items-center justify-center">
+                <div className="text-center text-gray-400">Feature Preview Image</div>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -54,19 +68,22 @@ const Features = () => {
     description: "Connect with leads instantly through multiple channels, providing the quick responses today's customers expect.",
     icon: MessageCircle,
     features: ["Real-time chat with typing indicators and read receipts", "Click-to-call functionality that works on any device", "Automated response scheduling for off-hours", "Message templates for quick, consistent replies"],
-    imagePosition: "right"
+    imagePosition: "right",
+    imageSrc: "/lovable-uploads/7450e966-4b3c-41c5-9d48-cd6b98cb0ff3.png"
   }, {
     title: "Lead Generation & Management",
     description: "Generate exclusive leads that come directly to you, not shared with competitors in your area.",
     icon: Users,
     features: ["Targeted local advertising campaigns", "Lead scoring and qualification tools", "Comprehensive lead activity tracking", "Follow-up reminders and task automation"],
-    imagePosition: "left"
+    imagePosition: "left",
+    imageSrc: "/lovable-uploads/cebeb98f-8653-48cc-80fd-0c626d0b73aa.png"
   }, {
     title: "Your Professional Website",
     description: "Get a professional online presence without the headache of web design or expensive developers.",
     icon: Link,
     features: ["Mobile-optimized mini-website with your branding", "Custom domain name options", "Built-in SEO optimization", "Service showcase and portfolio gallery"],
-    imagePosition: "right"
+    imagePosition: "right",
+    imageSrc: "/lovable-uploads/f425f245-697e-4440-81b4-080fc0c06094.png"
   }, {
     title: "Business Tools & Analytics",
     description: "Make data-driven decisions with powerful but easy-to-understand analytics.",
@@ -86,7 +103,15 @@ const Features = () => {
           </div>
         </section>
 
-        {featureSections.map((section, index) => <FeatureSection key={index} title={section.title} description={section.description} icon={section.icon} features={section.features} imagePosition={section.imagePosition as "left" | "right"} />)}
+        {featureSections.map((section, index) => <FeatureSection 
+          key={index} 
+          title={section.title} 
+          description={section.description} 
+          icon={section.icon} 
+          features={section.features} 
+          imagePosition={section.imagePosition as "left" | "right"} 
+          imageSrc={section.imageSrc}
+        />)}
       </main>
       <Footer />
     </div>;
