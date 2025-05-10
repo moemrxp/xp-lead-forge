@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -13,8 +12,8 @@ const Hero = () => {
             </h1>
             
             <div className="space-y-4">
-              <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0 font-medium whitespace-nowrap">
-                High-Converting Website. Exclusive Leads. <span className="whitespace-nowrap">Value-Driven Technology.</span>
+              <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0 font-medium">
+                High-Converting Website. Exclusive Leads. Value-Driven Technology.
               </p>
               
               <div className="flex justify-center lg:justify-start">
@@ -61,14 +60,16 @@ With built-in tools like instant messaging and instant quote requests, designed 
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
-                      <span className="font-medium">Instant Messages </span>
+                      <span className="font-medium">Instant Messages </span>
                       <span className="text-green-600 font-bold">6</span>
                     </div>
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
                       <span className="font-medium">Calls</span>
-                      <span className="text-mrxp-accent font-bold">12</span>
+                      <span className="text-mrxp-accent font-bold">12
+
+                    </span>
                     </div>
                   </div>
                 </div>

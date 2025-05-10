@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 import CTA from "@/components/home/CTA";
+import AppShowcase from "@/components/home/AppShowcase";
 
 const PricingTier = ({
   title,
@@ -284,6 +285,8 @@ const Pricing = () => {
             </div>
           </div>
         </section>
+        
+        <AppShowcase />
 
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
