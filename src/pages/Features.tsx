@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit, Search, Settings, Link } from "lucide-react";
+
 const FeatureSection = ({
   title,
   description,
@@ -46,6 +47,7 @@ const FeatureSection = ({
       </div>
     </div>;
 };
+
 const Features = () => {
   const featureSections = [{
     title: "Modern Communication Tools",
@@ -60,23 +62,17 @@ const Features = () => {
     features: ["Targeted local advertising campaigns", "Lead scoring and qualification tools", "Comprehensive lead activity tracking", "Follow-up reminders and task automation"],
     imagePosition: "left"
   }, {
-    title: "Professional Quote System",
-    description: "Create and send professional quotes in minutes that help you win more business.",
-    icon: Edit,
-    features: ["Customizable quote templates with your branding", "Digital signature collection", "Automated follow-ups for pending quotes", "Conversion tracking from quote to job"],
-    imagePosition: "right"
-  }, {
     title: "Your Professional Website",
     description: "Get a professional online presence without the headache of web design or expensive developers.",
     icon: Link,
     features: ["Mobile-optimized mini-website with your branding", "Custom domain name options", "Built-in SEO optimization", "Service showcase and portfolio gallery"],
-    imagePosition: "left"
+    imagePosition: "right"
   }, {
     title: "Business Tools & Analytics",
     description: "Make data-driven decisions with powerful but easy-to-understand analytics.",
     icon: Settings,
     features: ["Performance dashboard with key metrics", "Lead source attribution", "Conversion rate optimization", "ROI tracking for advertising spend"],
-    imagePosition: "right"
+    imagePosition: "left"
   }];
   return <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -95,4 +91,5 @@ const Features = () => {
       <Footer />
     </div>;
 };
+
 export default Features;
