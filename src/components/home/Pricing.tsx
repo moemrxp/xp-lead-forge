@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -132,9 +131,9 @@ const Pricing = () => {
                 Get Started
               </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/pricing">
               <Button size="lg" variant="outline" className="bg-transparent border-[#2563eb] text-[#2563eb] hover:bg-[#2563eb]/10 px-8">
-                Request Demo
+                View More Details
               </Button>
             </Link>
           </div>
