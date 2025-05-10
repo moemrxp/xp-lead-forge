@@ -1,51 +1,8 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Card, CardContent } from "@/components/ui/card";
-import { useIsMobile } from "@/hooks/use-mobile";
-
-const FeatureShowcase = ({
-  title,
-  description,
-  image,
-  icon: Icon,
-  imagePosition = "right"
-}: {
-  title: string;
-  description: string;
-  image: string;
-  icon: React.ElementType;
-  imagePosition?: "left" | "right";
-}) => {
-  const isMobile = useIsMobile();
-  
-  return (
-    <Card className="overflow-hidden border-0 bg-white shadow-md mb-6">
-      <CardContent className="p-0">
-        <div className={`grid grid-cols-1 ${isMobile ? "" : "md:grid-cols-2"} gap-6`}>
-          <div className={`p-6 ${imagePosition === "right" || isMobile ? "order-1" : "order-2"}`}>
-            <div className="bg-mrxp-primary/10 w-14 h-14 flex items-center justify-center rounded-lg mb-4">
-              <Icon className="text-mrxp-primary w-7 h-7" />
-            </div>
-            <h3 className="text-xl font-bold mb-3">{title}</h3>
-            <p className="text-gray-600">{description}</p>
-          </div>
-          <div className={`${imagePosition === "right" || isMobile ? "order-2" : "order-1"} ${isMobile ? "px-6 pb-6" : "p-0"}`}>
-            <AspectRatio ratio={isMobile ? 16 / 9 : 4 / 3} className="bg-gray-50">
-              <img 
-                src={image} 
-                alt={title} 
-                className={`w-full h-full object-cover ${isMobile ? "" : "rounded-tr-lg rounded-br-lg"}`}
-              />
-            </AspectRatio>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
-  );
-};
 
 const FeatureCard = ({
   icon: Icon,
@@ -66,47 +23,31 @@ const FeatureCard = ({
 };
 
 const Features = () => {
-  const featuredItems = [
-    {
-      icon: MessageCircle,
-      title: "Modern Communication Tools",
-      description: "Connect with leads instantly through our professional messaging interface. Respond quickly, track conversations, and never miss an opportunity with real-time notifications.",
-      image: "/lovable-uploads/61c20c59-7541-4b3e-910a-d372ba5f307f.png",
-      imagePosition: "right"
-    },
-    {
-      icon: Users,
-      title: "Lead Generation & Management",
-      description: "Track your performance, manage leads, and get insights through an intuitive dashboard. See your conversion rates, response times, and lead quality at a glance.",
-      image: "/lovable-uploads/ec7429b3-2739-4397-801a-a652e838e789.png",
-      imagePosition: "left"
-    },
-    {
-      icon: Star,
-      title: "Your Professional Website",
-      description: "Get a mobile-optimized website that showcases your experience, services, and makes it easy for customers to contact you through multiple channels.",
-      image: "/lovable-uploads/61989651-41ba-4083-a9af-bbd9b33681ee.png",
-      imagePosition: "right"
-    }
-  ];
-  
-  const features = [
-    {
-      icon: PhoneCall,
-      title: "Click-to-Call",
-      description: "Make it easy for potential clients to reach you directly with one-click calling from any device."
-    },
-    {
-      icon: Calendar,
-      title: "Scheduling Tools",
-      description: "Let clients book appointments that sync with your calendar and send automatic reminders."
-    },
-    {
-      icon: Edit,
-      title: "Experience Reports",
-      description: "Share verified summaries of your credentials, past projects, and expertise to build trust with potential clients."
-    }
-  ];
+  const features = [{
+    icon: Star,
+    title: "Smart Advertising",
+    description: "Run targeted local ads that generate exclusive leads only for your business, not shared with competitors."
+  }, {
+    icon: MessageCircle,
+    title: "Instant Messaging",
+    description: "Connect with leads in real-time through a professional chat interface tailored for service businesses."
+  }, {
+    icon: PhoneCall,
+    title: "Click-to-Call",
+    description: "Make it easy for potential clients to reach you directly with one-click calling from any device."
+  }, {
+    icon: Edit,
+    title: "Instant Quotes",
+    description: "Send professional estimates quickly using customizable templates that match your branding."
+  }, {
+    icon: Users,
+    title: "Lead Management",
+    description: "Track and manage your leads through a simple but powerful dashboard designed for busy pros."
+  }, {
+    icon: Calendar,
+    title: "Scheduling Tools",
+    description: "Let clients book appointments that sync with your calendar and send automatic reminders."
+  }];
   
   const faqs = [{
     question: "What makes MrXP different from Angi, Home Advisor, & Thumbtack?",
@@ -148,28 +89,8 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="space-y-8 mb-16">
-          {featuredItems.map((item, index) => (
-            <FeatureShowcase 
-              key={index}
-              icon={item.icon}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              imagePosition={item.imagePosition as "left" | "right"}
-            />
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {features.map((feature, index) => (
-            <FeatureCard 
-              key={index} 
-              icon={feature.icon} 
-              title={feature.title} 
-              description={feature.description} 
-            />
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => <FeatureCard key={index} icon={feature.icon} title={feature.title} description={feature.description} />)}
         </div>
 
         <div className="mt-20 max-w-3xl mx-auto">

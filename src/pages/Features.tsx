@@ -1,28 +1,20 @@
-
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit, Search, Settings, Link } from "lucide-react";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-
 const FeatureSection = ({
   title,
   description,
   icon: Icon,
   features,
-  imagePosition = "right",
-  imageSrc
+  imagePosition = "right"
 }: {
   title: string;
   description: string;
   icon: React.ElementType;
   features: string[];
   imagePosition?: "left" | "right";
-  imageSrc?: string;
 }) => {
-  const isMobile = useIsMobile();
-  
   return <div className="py-16 border-b border-gray-200 last:border-0">
       <div className="container mx-auto px-4">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${imagePosition === "left" ? "lg:flex-row-reverse" : ""}`}>
@@ -46,60 +38,46 @@ const FeatureSection = ({
           </div>
           
           <div className={`${imagePosition === "left" ? "order-first lg:order-last" : ""}`}>
-            {imageSrc ? (
-              <AspectRatio ratio={isMobile ? 16 / 9 : 4 / 3} className="rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src={imageSrc} 
-                  alt={title} 
-                  className="w-full h-full object-cover"
-                />
-              </AspectRatio>
-            ) : (
-              <div className="bg-gray-100 rounded-xl p-4 aspect-video flex items-center justify-center">
-                <div className="text-center text-gray-400">Feature Preview Image</div>
-              </div>
-            )}
+            <div className="bg-gray-100 rounded-xl p-4 aspect-video flex items-center justify-center">
+              <div className="text-center text-gray-400">Feature Preview Image</div>
+            </div>
           </div>
         </div>
       </div>
     </div>;
 };
-
 const Features = () => {
-  const featureSections = [
-    {
-      title: "Modern Communication Tools",
-      description: "Connect with leads instantly through multiple channels, providing the quick responses today's customers expect.",
-      icon: MessageCircle,
-      features: ["Real-time chat with typing indicators and read receipts", "Click-to-call functionality that works on any device", "Automated response scheduling for off-hours", "Message templates for quick, consistent replies"],
-      imagePosition: "right",
-      imageSrc: "/lovable-uploads/61c20c59-7541-4b3e-910a-d372ba5f307f.png"
-    }, 
-    {
-      title: "Lead Generation & Management",
-      description: "Generate exclusive leads that come directly to you, not shared with competitors in your area.",
-      icon: Users,
-      features: ["Targeted local advertising campaigns", "Lead scoring and qualification tools", "Comprehensive lead activity tracking", "Follow-up reminders and task automation"],
-      imagePosition: "left",
-      imageSrc: "/lovable-uploads/ec7429b3-2739-4397-801a-a652e838e789.png"
-    }, 
-    {
-      title: "Your Professional Website",
-      description: "Get a professional online presence without the headache of web design or expensive developers.",
-      icon: Link,
-      features: ["Mobile-optimized mini-website with your branding", "Custom domain name options", "Built-in SEO optimization", "Service showcase and portfolio gallery"],
-      imagePosition: "right",
-      imageSrc: "/lovable-uploads/61989651-41ba-4083-a9af-bbd9b33681ee.png"
-    }, 
-    {
-      title: "Business Tools & Analytics",
-      description: "Make data-driven decisions with powerful but easy-to-understand analytics.",
-      icon: Settings,
-      features: ["Performance dashboard with key metrics", "Lead source attribution", "Conversion rate optimization", "ROI tracking for advertising spend"],
-      imagePosition: "left"
-    }
-  ];
-  
+  const featureSections = [{
+    title: "Modern Communication Tools",
+    description: "Connect with leads instantly through multiple channels, providing the quick responses today's customers expect.",
+    icon: MessageCircle,
+    features: ["Real-time chat with typing indicators and read receipts", "Click-to-call functionality that works on any device", "Automated response scheduling for off-hours", "Message templates for quick, consistent replies"],
+    imagePosition: "right"
+  }, {
+    title: "Lead Generation & Management",
+    description: "Generate exclusive leads that come directly to you, not shared with competitors in your area.",
+    icon: Users,
+    features: ["Targeted local advertising campaigns", "Lead scoring and qualification tools", "Comprehensive lead activity tracking", "Follow-up reminders and task automation"],
+    imagePosition: "left"
+  }, {
+    title: "Professional Quote System",
+    description: "Create and send professional quotes in minutes that help you win more business.",
+    icon: Edit,
+    features: ["Customizable quote templates with your branding", "Digital signature collection", "Automated follow-ups for pending quotes", "Conversion tracking from quote to job"],
+    imagePosition: "right"
+  }, {
+    title: "Your Professional Website",
+    description: "Get a professional online presence without the headache of web design or expensive developers.",
+    icon: Link,
+    features: ["Mobile-optimized mini-website with your branding", "Custom domain name options", "Built-in SEO optimization", "Service showcase and portfolio gallery"],
+    imagePosition: "left"
+  }, {
+    title: "Business Tools & Analytics",
+    description: "Make data-driven decisions with powerful but easy-to-understand analytics.",
+    icon: Settings,
+    features: ["Performance dashboard with key metrics", "Lead source attribution", "Conversion rate optimization", "ROI tracking for advertising spend"],
+    imagePosition: "right"
+  }];
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
@@ -112,20 +90,9 @@ const Features = () => {
           </div>
         </section>
 
-        {featureSections.map((section, index) => (
-          <FeatureSection 
-            key={index} 
-            title={section.title} 
-            description={section.description} 
-            icon={section.icon} 
-            features={section.features} 
-            imagePosition={section.imagePosition as "left" | "right"}
-            imageSrc={section.imageSrc}
-          />
-        ))}
+        {featureSections.map((section, index) => <FeatureSection key={index} title={section.title} description={section.description} icon={section.icon} features={section.features} imagePosition={section.imagePosition as "left" | "right"} />)}
       </main>
       <Footer />
     </div>;
 };
-
 export default Features;
