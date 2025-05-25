@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -15,7 +16,7 @@ const PricingTier = ({
   buttonText = "Get Started"
 }) => {
   return <div className={`bg-white rounded-xl shadow-md border ${isPopular ? 'border-mrxp-primary' : 'border-gray-100'} relative`}>
-      {isPopular && <div className="absolute top-0 right-0 bg-mrxp-accent text-white px-4 rounded-tr-xl rounded-bl-xl text-sm font-semibold py-[3px]">
+      {isPopular && <div className="absolute top-0 right-0 bg-blue-400 text-white px-4 rounded-tr-xl rounded-bl-xl text-sm font-semibold py-[3px]">
           Most Popular
         </div>}
       <div className="p-6 lg:p-8">
@@ -39,7 +40,7 @@ const PricingTier = ({
         </div>
 
         <Link to="/contact">
-          <Button className={`w-full mb-6 ${isPopular ? 'bg-mrxp-accent hover:bg-mrxp-accent/90' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}>
+          <Button className={`w-full mb-6 ${isPopular ? 'bg-blue-400 hover:bg-blue-300' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}>
             {buttonText}
           </Button>
         </Link>
@@ -89,7 +90,7 @@ const Pricing = () => {
       "Ideal for: Agencies seeking to enhance clients ad portfolio", 
       "Ideal for: Businesses aiming to convert traffic into real leads"
     ],
-    isPopular: true
+    isPopular: false
   }, {
     title: "Growth",
     price: "$5,000",
@@ -98,7 +99,7 @@ const Pricing = () => {
     serviceAreas: "2-3 service areas",
     teamSize: "Growing Business or Medium Team",
     features: ["Everything in Starter", "Exclusive leads", "Advanced lead management", "Extended service area coverage", "Team collaboration tools", "Campaign quality audits", "Performance tracking"],
-    isPopular: false
+    isPopular: true
   }, {
     title: "Enterprise",
     price: "$10,000",
