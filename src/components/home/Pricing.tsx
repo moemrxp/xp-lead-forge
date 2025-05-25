@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -13,11 +12,15 @@ const PricingTier = ({
   teamSize,
   features,
   isPopular = false,
+  isGrowthPopular = false,
   buttonText = "Get Started"
 }) => {
-  return <div className={`bg-white rounded-xl shadow-md border ${isPopular ? 'border-mrxp-primary' : 'border-gray-100'} relative`}>
-      {isPopular && <div className="absolute top-0 right-0 bg-blue-400 text-white px-4 rounded-tr-xl rounded-bl-xl text-sm font-semibold py-[3px]">
+  return <div className={`bg-white rounded-xl shadow-md border ${isPopular ? 'border-mrxp-primary' : isGrowthPopular ? 'border-blue-400' : 'border-gray-100'} relative`}>
+      {isPopular && <div className="absolute top-0 right-0 bg-mrxp-accent text-white px-4 rounded-tr-xl rounded-bl-xl text-sm font-semibold py-[3px]">
           Most Popular
+        </div>}
+      {isGrowthPopular && <div className="absolute top-0 right-0 bg-blue-400 text-white px-4 rounded-tr-xl rounded-bl-xl text-sm font-semibold py-[3px]">
+          Popular
         </div>}
       <div className="p-6 lg:p-8">
         <h3 className="text-xl font-bold mb-2 px-0 mx-0 py-[7px]">{title}</h3>
@@ -40,7 +43,7 @@ const PricingTier = ({
         </div>
 
         <Link to="/contact">
-          <Button className={`w-full mb-6 ${isPopular ? 'bg-blue-400 hover:bg-blue-300' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}>
+          <Button className={`w-full mb-6 ${isPopular ? 'bg-mrxp-accent hover:bg-mrxp-accent/90' : isGrowthPopular ? 'bg-blue-400 hover:bg-blue-300' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}>
             {buttonText}
           </Button>
         </Link>
@@ -90,7 +93,8 @@ const Pricing = () => {
       "Ideal for: Agencies seeking to enhance clients ad portfolio", 
       "Ideal for: Businesses aiming to convert traffic into real leads"
     ],
-    isPopular: false
+    isPopular: true,
+    isGrowthPopular: false
   }, {
     title: "Growth",
     price: "$5,000",
@@ -99,7 +103,8 @@ const Pricing = () => {
     serviceAreas: "2-3 service areas",
     teamSize: "Growing Business or Medium Team",
     features: ["Everything in Starter", "Exclusive leads", "Advanced lead management", "Extended service area coverage", "Team collaboration tools", "Campaign quality audits", "Performance tracking"],
-    isPopular: true
+    isPopular: false,
+    isGrowthPopular: true
   }, {
     title: "Enterprise",
     price: "$10,000",
@@ -107,7 +112,9 @@ const Pricing = () => {
     leadsPerMonth: "Up to 50 Exclusive Leads per Month",
     serviceAreas: "3-4 service areas",
     teamSize: "Established Business with Staffed Team",
-    features: ["Everything in Growth", "Maximum lead volume", "Priority campaign optimization", "Custom reporting", "Dedicated account manager", "Strategic growth planning"]
+    features: ["Everything in Growth", "Maximum lead volume", "Priority campaign optimization", "Custom reporting", "Dedicated account manager", "Strategic growth planning"],
+    isPopular: false,
+    isGrowthPopular: false
   }];
   
   return <section className="py-20 bg-white" id="pricing">
@@ -122,7 +129,7 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {pricingTiers.map((tier, index) => <PricingTier key={index} title={tier.title} price={tier.price} description={tier.description} leadsPerMonth={tier.leadsPerMonth || ""} serviceAreas={tier.serviceAreas || ""} teamSize={tier.teamSize || ""} features={tier.features} isPopular={tier.isPopular || false} />)}
+          {pricingTiers.map((tier, index) => <PricingTier key={index} title={tier.title} price={tier.price} description={tier.description} leadsPerMonth={tier.leadsPerMonth || ""} serviceAreas={tier.serviceAreas || ""} teamSize={tier.teamSize || ""} features={tier.features} isPopular={tier.isPopular || false} isGrowthPopular={tier.isGrowthPopular || false} />)}
         </div>
 
         <div className="text-center mb-20">
