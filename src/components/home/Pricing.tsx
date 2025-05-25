@@ -43,7 +43,7 @@ const PricingTier = ({
         </div>
 
         <Link to="/contact">
-          <Button className={`w-full mb-6 ${isPopular ? 'bg-mrxp-accent hover:bg-mrxp-accent/90' : isGrowthPopular ? 'bg-blue-400 hover:bg-blue-300' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}>
+          <Button className={`w-full mb-6 ${isPopular ? 'bg-mrxp-accent hover:bg-mrxp-accent/90' : 'bg-mrxp-primary hover:bg-mrxp-primary/90'}`}>
             {buttonText}
           </Button>
         </Link>
