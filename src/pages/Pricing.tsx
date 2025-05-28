@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -37,7 +38,7 @@ const PricingTier = ({
           <h3 className="text-xl font-bold mb-2">{title}</h3>
           <div className="mb-4">
             <span className="text-4xl font-bold">{price}</span>
-            {price !== "Custom" && <span className="text-gray-500">/mo</span>}
+            <span className="text-gray-500">/mo</span>
             {priceSubtext && <div className="text-sm text-gray-600 mt-1">{priceSubtext}</div>}
           </div>
           <p className="text-gray-600 mb-6">{description}</p>
@@ -309,3 +310,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
