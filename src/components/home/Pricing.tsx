@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -27,7 +28,7 @@ const PricingTier = ({
         <h3 className="text-xl font-bold mb-2 px-0 mx-0 py-[7px]">{title}</h3>
         <div className="mb-4">
           <span className="text-4xl font-bold">{price}</span>
-          <span className="text-gray-500">/mo</span>
+          {price !== "Custom" && <span className="text-gray-500">/mo</span>}
           {priceSubtext && <div className="text-sm text-gray-600 mt-1">{priceSubtext}</div>}
         </div>
         <p className="text-gray-600 mb-4">{description}</p>
@@ -80,7 +81,7 @@ const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
     price: "$0",
-    priceSubtext: "for the first 30 days, then $697/mo",
+    priceSubtext: "for the first 30 days, then $597/mo",
     description: "Website & Technology",
     features: [
       "Build Value, Win Jobs, Maximize Profits.", 
@@ -110,10 +111,10 @@ const Pricing = () => {
     isGrowthPopular: true
   }, {
     title: "Enterprise",
-    price: "$10,000",
+    price: "Custom",
     description: "Full-service solution for high-volume service businesses.",
-    leadsPerMonth: "Up to 50 Exclusive Leads per Month",
-    serviceAreas: "3-4 service areas",
+    leadsPerMonth: "Custom amount of exclusive leads",
+    serviceAreas: "Custom service areas",
     teamSize: "Established Business with Staffed Team",
     features: ["Everything in Growth", "Maximum lead volume", "Priority campaign optimization", "Custom reporting", "Dedicated account manager", "Strategic growth planning"],
     isPopular: false,

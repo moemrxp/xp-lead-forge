@@ -37,7 +37,7 @@ const PricingTier = ({
           <h3 className="text-xl font-bold mb-2">{title}</h3>
           <div className="mb-4">
             <span className="text-4xl font-bold">{price}</span>
-            <span className="text-gray-500">/mo</span>
+            {price !== "Custom" && <span className="text-gray-500">/mo</span>}
             {priceSubtext && <div className="text-sm text-gray-600 mt-1">{priceSubtext}</div>}
           </div>
           <p className="text-gray-600 mb-6">{description}</p>
@@ -80,7 +80,7 @@ const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
     price: "$0",
-    priceSubtext: "for the first 30 days, then $697/mo",
+    priceSubtext: "for the first 30 days, then $597/mo",
     description: "Website & Technology",
     features: [
       {
@@ -194,16 +194,16 @@ const Pricing = () => {
     isPopular: false
   }, {
     title: "Enterprise",
-    price: "$10,000",
+    price: "Custom",
     description: "Full-service solution for high-volume service businesses.",
     features: [
       {
         included: true,
-        text: "Up to 50 Exclusive Leads per Month"
+        text: "Custom amount of exclusive leads"
       },
       {
         included: true,
-        text: "3-4 service areas"
+        text: "Custom service areas"
       },
       {
         included: true,
