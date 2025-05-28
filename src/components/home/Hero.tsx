@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -10,7 +9,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
-              Grow Your Business With <span className="text-blue-900">Mr. Experience</span>
+              Grow Your Business With <span className="text-blue-900">Exclusive Leads</span>
             </h1>
             
             <div className="space-y-4">
