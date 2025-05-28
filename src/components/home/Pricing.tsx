@@ -13,7 +13,8 @@ const PricingTier = ({
   features,
   isPopular = false,
   isGrowthPopular = false,
-  buttonText = "Get Started"
+  buttonText = "Get Started",
+  priceSubtext
 }) => {
   return <div className={`bg-white rounded-xl shadow-md border ${isPopular ? 'border-mrxp-primary' : isGrowthPopular ? 'border-blue-400' : 'border-gray-100'} relative`}>
       {isPopular && <div className="absolute top-0 right-0 bg-mrxp-accent text-white px-4 rounded-tr-xl rounded-bl-xl text-sm font-semibold py-[3px]">
@@ -27,6 +28,7 @@ const PricingTier = ({
         <div className="mb-4">
           <span className="text-4xl font-bold">{price}</span>
           <span className="text-gray-500">/mo</span>
+          {priceSubtext && <div className="text-sm text-gray-600 mt-1">{priceSubtext}</div>}
         </div>
         <p className="text-gray-600 mb-4">{description}</p>
         
@@ -77,7 +79,8 @@ const CommonFeatures = () => <div className="mt-16 bg-gray-50 p-8 rounded-xl">
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
-    price: "$697",
+    price: "$0",
+    priceSubtext: "for the first 30 days, then $697/mo",
     description: "Website & Technology",
     features: [
       "Build Value, Win Jobs, Maximize Profits.", 
@@ -129,7 +132,7 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {pricingTiers.map((tier, index) => <PricingTier key={index} title={tier.title} price={tier.price} description={tier.description} leadsPerMonth={tier.leadsPerMonth || ""} serviceAreas={tier.serviceAreas || ""} teamSize={tier.teamSize || ""} features={tier.features} isPopular={tier.isPopular || false} isGrowthPopular={tier.isGrowthPopular || false} />)}
+          {pricingTiers.map((tier, index) => <PricingTier key={index} title={tier.title} price={tier.price} priceSubtext={tier.priceSubtext} description={tier.description} leadsPerMonth={tier.leadsPerMonth || ""} serviceAreas={tier.serviceAreas || ""} teamSize={tier.teamSize || ""} features={tier.features} isPopular={tier.isPopular || false} isGrowthPopular={tier.isGrowthPopular || false} />)}
         </div>
 
         <div className="text-center mb-20">

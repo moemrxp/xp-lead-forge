@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -13,7 +14,8 @@ const PricingTier = ({
   description,
   features,
   isPopular = false,
-  buttonText = "Get Started"
+  buttonText = "Get Started",
+  priceSubtext
 }: {
   title: string;
   price: string;
@@ -24,6 +26,7 @@ const PricingTier = ({
   }[];
   isPopular?: boolean;
   buttonText?: string;
+  priceSubtext?: string;
 }) => {
   return <div className={`bg-white rounded-xl shadow-md ${isPopular ? 'border-2 border-mrxp-primary' : 'border border-gray-200'} relative h-full`}>
       {isPopular && <div className="absolute top-0 right-0 bg-mrxp-accent text-white px-4 py-1 rounded-tr-xl rounded-bl-xl text-sm font-semibold">
@@ -35,6 +38,7 @@ const PricingTier = ({
           <div className="mb-4">
             <span className="text-4xl font-bold">{price}</span>
             <span className="text-gray-500">/mo</span>
+            {priceSubtext && <div className="text-sm text-gray-600 mt-1">{priceSubtext}</div>}
           </div>
           <p className="text-gray-600 mb-6">{description}</p>
         </div>
@@ -75,7 +79,8 @@ const FAQ = ({
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
-    price: "$697",
+    price: "$0",
+    priceSubtext: "for the first 30 days, then $697/mo",
     description: "Website & Technology",
     features: [
       {
@@ -281,7 +286,7 @@ const Pricing = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {pricingTiers.map((tier, index) => <PricingTier key={index} title={tier.title} price={tier.price} description={tier.description} features={tier.features} isPopular={tier.isPopular} />)}
+              {pricingTiers.map((tier, index) => <PricingTier key={index} title={tier.title} price={tier.price} priceSubtext={tier.priceSubtext} description={tier.description} features={tier.features} isPopular={tier.isPopular} />)}
             </div>
           </div>
         </section>
