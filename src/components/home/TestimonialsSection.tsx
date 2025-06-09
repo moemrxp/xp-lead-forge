@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -99,7 +100,8 @@ const TestimonialsSection = () => {
       quote: "I met MoeMrXP at a trade show during their earliest days and its been an awesome journey seeing this come about, highly recommend you book a call and see what the hype is about!!",
       company: "Cabinet IQ",
       url: "cabinetiqofbridgewater.mrxp.com",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/5600021c-4143-48e4-ba03-a3d05658dbf0.png"
     },
     {
       quote: "We onboarded 5 of our clients onto MrXP with the Website & Tech Package and we run our own ads and The results have been consistent so far. With leads converting to jobs, less back-and-forth, and way better customer experience.",
