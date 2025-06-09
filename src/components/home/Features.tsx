@@ -1,8 +1,8 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import TestimonialsSection from "./TestimonialsSection";
 
 const FeatureCard = ({
   icon: Icon,
@@ -78,7 +78,8 @@ const Features = () => {
     answer: "You refer 3 providers to advertise on mrxp at any plan you earn an additional $1000 in advertising credits."
   }];
   
-  return <section className="py-20 bg-gray-50" id="features">
+  return (
+    <section className="py-20 bg-gray-50" id="features">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -90,7 +91,18 @@ const Features = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => <FeatureCard key={index} icon={feature.icon} title={feature.title} description={feature.description} />)}
+          {features.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </div>
+
+        <div className="mt-20 -mx-4">
+          <TestimonialsSection />
         </div>
 
         <div className="mt-20 max-w-3xl mx-auto">
@@ -98,14 +110,16 @@ const Features = () => {
             Frequently Asked Questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent>
                   {faq.answer}
                 </AccordionContent>
-              </AccordionItem>)}
+              </AccordionItem>
+            ))}
           </Accordion>
         </div>
 
@@ -118,7 +132,8 @@ const Features = () => {
           </Link>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 
 export default Features;
