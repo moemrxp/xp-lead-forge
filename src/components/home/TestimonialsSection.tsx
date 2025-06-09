@@ -112,7 +112,8 @@ const TestimonialsSection = () => {
       quote: "We've tried every platform, MrXP is just smarter. This does not replace your website, this ADDS to your online presence. We love it! Highly Recommended",
       company: "Pacific Air HVAC",
       url: "pacificairhvac.mrxp.com",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/ccae1ab6-eff8-4d35-866d-9cc7029fa5d4.png"
     },
     {
       quote: "The first thing we did was CRM blast our experience report to all our customers! Saw lots of engagement and feedback asking what it was, so far so good",
