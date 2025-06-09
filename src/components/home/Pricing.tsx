@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
-
 const PricingTier = ({
   title,
   price,
@@ -59,43 +58,14 @@ const PricingTier = ({
       </div>
     </div>;
 };
-
-const CommonFeatures = () => <div className="mt-16 bg-gray-50 p-8 rounded-xl">
-    <h3 className="text-2xl font-bold mb-6 text-center">What You Get With Every Plan</h3>
-    <p className="text-gray-600 mb-8 text-center">
-      All plans include full access to tools, support, and marketing features.
-    </p>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {["Branded MrXP Business Website", "The Mr. Experience Report", "Lead Dashboard", "Chat Box / Instant Messaging", "Click-to-Call / Call Tracking", "Priority Support", "Month-to-Month Commitment", "30-Day Cancellation Notice", "Profile Must Be Completed to Launch"].map((feature, idx) => <div key={idx} className="flex items-start">
-          <Check className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
-          <span className="text-gray-700">{feature}</span>
-        </div>)}
-    </div>
-    <p className="mt-8 text-sm text-gray-600 text-center">
-      Each package includes everything you need to create a professional online presence and manage leads effectively.
-    </p>
-  </div>;
-
+const CommonFeatures = () => {};
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
     price: "$0",
     priceSubtext: "for the first 30 days, then $597/mo",
     description: "Website & Technology",
-    features: [
-      "Build Value, Win Jobs, Maximize Profits.", 
-      "Custom Website with Hosting (e.g., yourcompany.mrxp.com)", 
-      "Built-in Lead Capture", 
-      "Instant messaging", 
-      "Click-to-Call", 
-      "Reviews", 
-      "Photo's & Videos", 
-      "Mobile-Optimized Design", 
-      "Mr. Experience Report - showcase your credentials and build trust (Like Carfax)", 
-      "Ideal for: Home service professionals seeking to enhance online presence", 
-      "Ideal for: Agencies seeking to enhance clients ad portfolio", 
-      "Ideal for: Businesses aiming to convert traffic into real leads"
-    ],
+    features: ["Build Value, Win Jobs, Maximize Profits.", "Custom Website with Hosting (e.g., yourcompany.mrxp.com)", "Built-in Lead Capture", "Instant messaging", "Click-to-Call", "Reviews", "Photo's & Videos", "Mobile-Optimized Design", "Mr. Experience Report - showcase your credentials and build trust (Like Carfax)", "Ideal for: Home service professionals seeking to enhance online presence", "Ideal for: Agencies seeking to enhance clients ad portfolio", "Ideal for: Businesses aiming to convert traffic into real leads"],
     isPopular: true,
     isGrowthPopular: false
   }, {
@@ -119,7 +89,6 @@ const Pricing = () => {
     isPopular: false,
     isGrowthPopular: false
   }];
-  
   return <section className="py-20 bg-white" id="pricing">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -152,17 +121,8 @@ const Pricing = () => {
         
         <CommonFeatures />
 
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-4">Need a custom plan for your business?</h3>
-          <p className="text-gray-600 mb-6">Let's build a custom plan around your business goals.</p>
-          <Link to="/contact">
-            <Button variant="outline" className="bg-sky-400 hover:bg-sky-300">
-              Request Custom Plan
-            </Button>
-          </Link>
-        </div>
+        
       </div>
     </section>;
 };
-
 export default Pricing;
