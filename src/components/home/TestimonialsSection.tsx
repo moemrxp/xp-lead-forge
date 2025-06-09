@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -9,13 +8,15 @@ const TestimonialCard = ({
   company,
   url,
   rating = 5,
-  hasLogo = false
+  hasLogo = false,
+  logoUrl
 }: {
   quote: string;
   company: string;
   url?: string;
   rating?: number;
   hasLogo?: boolean;
+  logoUrl?: string;
 }) => {
   return (
     <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
@@ -32,10 +33,18 @@ const TestimonialCard = ({
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           {hasLogo && (
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
-              <span className="text-sm font-semibold text-blue-700">
-                {company.split(' ').map(word => word[0]).join('').slice(0, 2)}
-              </span>
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center overflow-hidden">
+              {logoUrl ? (
+                <img 
+                  src={logoUrl} 
+                  alt={`${company} logo`}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <span className="text-sm font-semibold text-blue-700">
+                  {company.split(' ').map(word => word[0]).join('').slice(0, 2)}
+                </span>
+              )}
             </div>
           )}
           <div>
@@ -64,7 +73,8 @@ const TestimonialsSection = () => {
       quote: "Highly Recommend you at least book a call to see for yourself. Everything about this just makes sense if you're a company that's value-driven and Homeowners Love it. They Love the pitch, the exclusive feel, and they love that they can message us before and after we show up. That confidence makes a huge difference.",
       company: "Future Remodeling",
       url: "futureremodeling.mrxp.com",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/453e79be-f930-4167-91be-de4877204986.png"
     },
     {
       quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're an agency and are serious about your clients standing out online, you need to book a call and see it for yourself.",
@@ -133,6 +143,7 @@ const TestimonialsSection = () => {
               company={testimonial.company}
               url={testimonial.url}
               hasLogo={testimonial.hasLogo}
+              logoUrl={testimonial.logoUrl}
             />
           ))}
         </div>
