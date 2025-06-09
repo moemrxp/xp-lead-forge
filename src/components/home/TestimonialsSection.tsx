@@ -78,10 +78,11 @@ const TestimonialsSection = () => {
       logoUrl: "/lovable-uploads/453e79be-f930-4167-91be-de4877204986.png"
     },
     {
-      quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're an agency and are serious about your clients standing out online, you need to book a call and see it for yourself.",
-      company: "LunchBox Digital",
+      quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're serious about standing out from the competition, this is for you",
+      company: "Floors by Val",
+      url: "floorsbyval.mrxp.com",
       hasLogo: true,
-      logoUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop&crop=center"
+      logoUrl: "/lovable-uploads/fd7f3e36-035e-4662-8973-73b84c1ecc7c.png"
     },
     {
       quote: "MrXP really brought carfax to the home industry. The Experience Report helps us close more jobs and help maximize our profits. Shoutout to MoeMrXP for this one!",
