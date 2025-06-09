@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -93,7 +92,8 @@ const TestimonialsSection = () => {
       quote: "We've seen a 200% Increase in Jobs won. We cut ties with all the old lead companies. MrXP gives us full control over our advertising, and the leads are exclusive. No chasing, no competing, just good business. Moe MrXP is the man!!!",
       company: "Universal Roofing Solutions",
       url: "universalroofingsolutions.mrxp.com",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/d8df9207-de4b-49d1-b106-2b7ced7ec890.png"
     },
     {
       quote: "I met MoeMrXP at a trade show during their earliest days and its been an awesome journey seeing this come about, highly recommend you book a call and see what the hype is about!!",
