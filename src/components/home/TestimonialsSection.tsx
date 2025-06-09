@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -109,11 +108,6 @@ const TestimonialsSection = () => {
     {
       quote: "As an agency owner, we're working with… not against MrXP. It fits perfectly into our workflow as Another True Lead Source that's plug-and-play. Pricing is fair for website hosting and tech, allowing us to still generate income on the ad spend.",
       company: "NJ Home Marketing",
-      hasLogo: true
-    },
-    {
-      quote: "The tech is clean, but what really matters is that our clients are happy. We chose to manage the leads so we were able to control how the ads are spent and placed. It's pretty cool that MrXP gives that option to us.",
-      company: "Home Pro Marketing",
       hasLogo: true
     }
   ];
