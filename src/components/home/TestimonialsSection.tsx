@@ -119,7 +119,8 @@ const TestimonialsSection = () => {
       quote: "The first thing we did was CRM blast our experience report to all our customers! Saw lots of engagement and feedback asking what it was, so far so good",
       company: "Jazz Construction Group",
       url: "jazzconstructiongroup.mrxp.com",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/3a7a0ea8-3314-4a37-9327-814533074434.png"
     },
     {
       quote: "As an agency owner, we're working with… not against MrXP. It fits perfectly into our workflow as Another True Lead Source that's plug-and-play. Pricing is fair for website hosting and tech, allowing us to still generate income on the ad spend.",
