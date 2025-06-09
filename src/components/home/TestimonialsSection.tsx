@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -79,7 +80,8 @@ const TestimonialsSection = () => {
     {
       quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're an agency and are serious about your clients standing out online, you need to book a call and see it for yourself.",
       company: "LunchBox Digital",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop&crop=center"
     },
     {
       quote: "MrXP really brought carfax to the home industry. The Experience Report helps us close more jobs and help maximize our profits. Shoutout to MoeMrXP for this one!",
@@ -105,7 +107,8 @@ const TestimonialsSection = () => {
     {
       quote: "We onboarded 5 of our clients onto MrXP with the Website & Tech Package and we run our own ads and The results have been consistent so far. With leads converting to jobs, less back-and-forth, and way better customer experience.",
       company: "NextLead Agency",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=400&fit=crop&crop=center"
     },
     {
       quote: "We've tried every platform, MrXP is just smarter. This does not replace your website, this ADDS to your online presence. We love it! Highly Recommended",
@@ -124,7 +127,8 @@ const TestimonialsSection = () => {
     {
       quote: "As an agency owner, we're working with… not against MrXP. It fits perfectly into our workflow as Another True Lead Source that's plug-and-play. Pricing is fair for website hosting and tech, allowing us to still generate income on the ad spend.",
       company: "NJ Home Marketing",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop&crop=center"
     }
   ];
 
