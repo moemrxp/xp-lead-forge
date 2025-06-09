@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -85,7 +86,8 @@ const TestimonialsSection = () => {
       quote: "MrXP really brought carfax to the home industry. The Experience Report helps us close more jobs and help maximize our profits. Shoutout to MoeMrXP for this one!",
       company: "Happy Home Improvement",
       url: "happyhomeimprovement.mrxp.com",
-      hasLogo: true
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/dc0710f2-6e39-4c3f-9a99-7821c6e425b4.png"
     },
     {
       quote: "We've seen a 200% Increase in Jobs won. We cut ties with all the old lead companies. MrXP gives us full control over our advertising, and the leads are exclusive. No chasing, no competing, just good business. Moe MrXP is the man!!!",
