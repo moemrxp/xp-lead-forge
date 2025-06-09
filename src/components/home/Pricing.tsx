@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
+
 const PricingTier = ({
   title,
   price,
@@ -58,7 +59,11 @@ const PricingTier = ({
       </div>
     </div>;
 };
-const CommonFeatures = () => {};
+
+const CommonFeatures = () => {
+  return null;
+};
+
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
@@ -120,9 +125,9 @@ const Pricing = () => {
         </div>
         
         <CommonFeatures />
-
         
       </div>
     </section>;
 };
+
 export default Pricing;
