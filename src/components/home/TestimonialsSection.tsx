@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -79,7 +78,7 @@ const TestimonialsSection = () => {
     },
     {
       quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're an agency and are serious about your clients standing out online, you need to book a call and see it for yourself.",
-      company: "Kraken Ads",
+      company: "LunchBox Digital",
       hasLogo: true
     },
     {
