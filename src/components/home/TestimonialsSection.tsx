@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -78,18 +77,18 @@ const TestimonialsSection = () => {
       logoUrl: "/lovable-uploads/453e79be-f930-4167-91be-de4877204986.png"
     },
     {
-      quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're serious about standing out from the competition, this is for you",
-      company: "Floors by Val",
-      url: "floorsbyval.mrxp.com",
-      hasLogo: true,
-      logoUrl: "/lovable-uploads/fd7f3e36-035e-4662-8973-73b84c1ecc7c.png"
-    },
-    {
       quote: "MrXP really brought carfax to the home industry. The Experience Report helps us close more jobs and help maximize our profits. Shoutout to MoeMrXP for this one!",
       company: "Happy Home Improvement",
       url: "happyhomeimprovement.mrxp.com",
       hasLogo: true,
       logoUrl: "/lovable-uploads/dc0710f2-6e39-4c3f-9a99-7821c6e425b4.png"
+    },
+    {
+      quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're serious about standing out from the competition, this is for you",
+      company: "Floors by Val",
+      url: "floorsbyval.mrxp.com",
+      hasLogo: true,
+      logoUrl: "/lovable-uploads/fd7f3e36-035e-4662-8973-73b84c1ecc7c.png"
     },
     {
       quote: "We've seen a 200% Increase in Jobs won. We cut ties with all the old lead companies. MrXP gives us full control over our advertising, and the leads are exclusive. No chasing, no competing, just good business. Moe MrXP is the man!!!",
