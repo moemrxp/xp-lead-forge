@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Star, ExternalLink } from "lucide-react";
@@ -77,14 +78,14 @@ const TestimonialsSection = () => {
       logoUrl: "/lovable-uploads/453e79be-f930-4167-91be-de4877204986.png"
     },
     {
-      quote: "MrXP really brought carfax to the home industry. The Experience Report helps us close more jobs and help maximize our profits. Shoutout to MoeMrXP for this one!",
+      quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're serious about standing out from the competition, this is for you",
       company: "Happy Home Improvement",
       url: "happyhomeimprovement.mrxp.com",
       hasLogo: true,
       logoUrl: "/lovable-uploads/dc0710f2-6e39-4c3f-9a99-7821c6e425b4.png"
     },
     {
-      quote: "This isn't Angi. This isn't Thumbtack. It's a totally different approach and honestly, and it's about damn time. If you're serious about standing out from the competition, this is for you",
+      quote: "MrXP really brought carfax to the home industry. The Experience Report helps us close more jobs and help maximize our profits. Shoutout to MoeMrXP for this one!",
       company: "Floors by Val",
       url: "floorsbyval.mrxp.com",
       hasLogo: true,
