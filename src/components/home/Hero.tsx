@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -9,12 +10,12 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
-              Grow Your Business With <span className="text-blue-900">Exclusive Leads</span>
+              Win More Jobs With <span className="text-blue-900">Reputation Marketing</span>
             </h1>
             
             <div className="space-y-4">
               <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0 font-medium">
-                High-Converting Website. Exclusive Leads. Value-Driven Technology.
+                Custom-Branded Website. Verified Experience. Exclusive Leads That Trust You.
               </p>
               
               <div className="flex justify-center lg:justify-start">
@@ -22,8 +23,7 @@ const Hero = () => {
               </div>
               
               <p className="text-lg md:text-xl text-mrxp-dark/70 max-w-xl mx-auto lg:mx-0">
-                Home Pros & Agencies — Run your own ads or let us handle it.
-                With built-in tools like instant messaging, instant quote requests, and your very own Experience Report, designed to build value, win jobs, and maximize profitability.
+                MrXP helps contractors turn their experience and reputation into a powerful marketing tool. We give you a high-converting website, exclusive leads, and the trust signals you need to close more jobs — without chasing or competing.
               </p>
             </div>
             
