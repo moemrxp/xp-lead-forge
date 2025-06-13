@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
-
 const PricingTier = ({
   title,
   price,
@@ -59,11 +58,9 @@ const PricingTier = ({
       </div>
     </div>;
 };
-
 const CommonFeatures = () => {
   return null;
 };
-
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
@@ -100,9 +97,7 @@ const Pricing = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Built for the best. <span className="text-blue-900">Unlock the Power of Your Experience</span>
           </h2>
-          <p className="text-xl text-gray-600">
-            Establish your online presence. Grow your business with confidence.
-          </p>
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -129,5 +124,4 @@ const Pricing = () => {
       </div>
     </section>;
 };
-
 export default Pricing;
