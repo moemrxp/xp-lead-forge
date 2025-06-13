@@ -1,9 +1,6 @@
-
 import React from "react";
-
 const ReputationSection = () => {
-  return (
-    <section className="py-20 bg-gray-50">
+  return <section className="py-0 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-mrxp-dark">
@@ -14,8 +11,6 @@ const ReputationSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ReputationSection;
