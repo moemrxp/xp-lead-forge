@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Check } from "lucide-react";
+
 const PricingTier = ({
   title,
   price,
@@ -58,16 +59,18 @@ const PricingTier = ({
       </div>
     </div>;
 };
+
 const CommonFeatures = () => {
   return null;
 };
+
 const Pricing = () => {
   const pricingTiers = [{
     title: "MrXP Website-Only Plan",
     price: "$0",
     priceSubtext: "for the first 30 days, then $597/mo",
     description: "Website & Technology",
-    features: ["Build Value, Win Jobs, Maximize Profits.", "Custom Website with Hosting (e.g., yourcompany.mrxp.com)", "Built-in Lead Capture", "Instant messaging", "Click-to-Call", "Reviews", "Photo's & Videos", "Mobile-Optimized Design", "Mr. Experience Report - showcase your credentials and build trust (Like Carfax)", "Ideal for: Home service professionals seeking to enhance online presence", "Ideal for: Agencies seeking to enhance clients ad portfolio", "Ideal for: Businesses aiming to convert traffic into real leads"],
+    features: ["Build Value, Win Jobs, Maximize Profits.", "Custom Website with Hosting & Reputation Marketing (e.g., yourcompany.mrxp.com)", "Built-in Lead Capture", "Instant messaging", "Click-to-Call", "Reviews", "Photo's & Videos", "Mobile-Optimized Design", "Mr. Experience Report - showcase your credentials and build trust", "Ideal for: Home service professionals seeking to enhance online presence", "Ideal for: Agencies seeking to enhance clients ad portfolio", "Ideal for: Businesses aiming to convert traffic into real leads"],
     isPopular: true,
     isGrowthPopular: false
   }, {
@@ -124,4 +127,5 @@ const Pricing = () => {
       </div>
     </section>;
 };
+
 export default Pricing;
