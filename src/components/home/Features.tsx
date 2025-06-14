@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit } from "lucide-react";
+import { MessageCircle, PhoneCall, Bell, Users, Star, Calendar, Edit, Award } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import TestimonialsSection from "./TestimonialsSection";
 
@@ -44,9 +44,9 @@ const Features = () => {
     title: "Lead Management",
     description: "Track and manage your leads through a simple but powerful dashboard designed for busy pros."
   }, {
-    icon: Calendar,
-    title: "Scheduling Tools",
-    description: "Let clients book appointments that sync with your calendar and send automatic reminders."
+    icon: Award,
+    title: "Reputation Marketing",
+    description: "Build trust with the Mr. Experience Report - a verified summary of your credentials, projects, and credibility that homeowners love and helps you win more jobs at higher margins."
   }];
   
   const faqs = [{
