@@ -85,7 +85,7 @@ const TestimonialsSection = () => {
       logoUrl: "/lovable-uploads/dc0710f2-6e39-4c3f-9a99-7821c6e425b4.png"
     },
     {
-      quote: "The reputation marketing tool changed by business ionstantly. The Experience Report helps us close more jobs and seperate us from the crowded competition. I definetly suggest to try the free trial and have your sales guys use it during their pitch!",
+      quote: "The reputation marketing tool changed by business forever. The Experience Report helps us close more jobs and separate us from the crowded competition. I definitely suggest to try the free trial and have your sales guys use it during their pitch!",
       company: "Floors by Val",
       url: "floorsbyval.mrxp.com",
       hasLogo: true,
