@@ -15,7 +15,7 @@ const Hero = () => {
             
             <div className="space-y-4">
               <p className="text-xl md:text-2xl text-mrxp-dark/80 max-w-xl mx-auto lg:mx-0 font-medium">
-                Custom-Branded Website. Verified Experience. Exclusive Leads That Trust You.
+                Value-Driven Website. Verified Experience. Exclusive Leads That Trust You.
               </p>
               
               <div className="flex justify-center lg:justify-start">
