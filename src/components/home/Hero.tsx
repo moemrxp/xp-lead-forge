@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
-              <span className="text-blue-900">Reputation Marketing</span> for <span className="text-blue-900">Home Pros</span>
+              Reputation Marketing for <span className="text-blue-900">Home Pros</span>
             </h1>
             
             <div className="space-y-4">
@@ -63,7 +63,7 @@ const Hero = () => {
                   </div>
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <div className="flex justify-between">
-                      <span className="font-medium">Instant Messages </span>
+                      <span className="font-medium">Instant Messages </span>
                       <span className="text-green-600 font-bold">6</span>
                     </div>
                   </div>
