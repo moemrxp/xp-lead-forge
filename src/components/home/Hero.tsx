@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
-              <span className="text-blue-900">Reputation Marketing</span> for Home Pros
+              <span className="text-blue-900">Reputation Marketing</span> for <span className="text-blue-900">Home Pros</span>
             </h1>
             
             <div className="space-y-4">
