@@ -1,16 +1,14 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
-
 const Hero = () => {
   return <section className="bg-white py-20 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mrxp-dark leading-tight">
-              Reputation Marketing for <span className="text-blue-900 font-extrabold">Home Pros</span>
+              Reputation Marketing for <span className="text-blue-900 font-bold">Home Pros</span>
             </h1>
             
             <div className="space-y-4">
